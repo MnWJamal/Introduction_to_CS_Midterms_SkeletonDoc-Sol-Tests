@@ -7,7 +7,7 @@ double midterm_quiz_q3(int arr[], int n, int idx)
     if (idx >= 1) left = arr[idx-1];
     if (idx <= n-2) right = arr[idx+1];
     return (0.5*(right - left));
-} // Replace this line with your function.
+}
 
 // Do not change this function
 void fillArray(int arr[], int n) {
