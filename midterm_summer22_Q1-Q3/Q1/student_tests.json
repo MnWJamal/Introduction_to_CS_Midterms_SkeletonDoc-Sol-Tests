@@ -1,0 +1,201 @@
+{
+  "tests": [
+    {
+      "name": "q1_min_1",
+      "input": "1\n",
+      "output": "0"
+    },
+
+    {
+      "name": "q1_prime_2",
+      "input": "2\n",
+      "output": "0"
+    },
+    {
+      "name": "q1_prime_3",
+      "input": "3\n",
+      "output": "0"
+    },
+    {
+      "name": "q1_prime_5",
+      "input": "5\n",
+      "output": "0"
+    },
+    {
+      "name": "q1_prime_11",
+      "input": "11\n",
+      "output": "0"
+    },
+
+    {
+      "name": "q1_square_4",
+      "input": "4\n",
+      "output": "0"
+    },
+    {
+      "name": "q1_power2_8",
+      "input": "8\n",
+      "output": "0"
+    },
+    {
+      "name": "q1_square_9",
+      "input": "9\n",
+      "output": "0"
+    },
+    {
+      "name": "q1_power2_16",
+      "input": "16\n",
+      "output": "0"
+    },
+    {
+      "name": "q1_power2_32",
+      "input": "32\n",
+      "output": "0"
+    },
+
+    {
+      "name": "q1_statement_example_10_not_abundant",
+      "input": "10\n",
+      "output": "0"
+    },
+    {
+      "name": "q1_first_abundant_12",
+      "input": "12\n",
+      "output": "1"
+    },
+
+    {
+      "name": "q1_perfect_boundary_6_sum_equals_2n",
+      "input": "6\n",
+      "output": "0"
+    },
+    {
+      "name": "q1_perfect_boundary_28_sum_equals_2n",
+      "input": "28\n",
+      "output": "0"
+    },
+
+    {
+      "name": "q1_composite_not_abundant_14",
+      "input": "14\n",
+      "output": "0"
+    },
+    {
+      "name": "q1_composite_not_abundant_15",
+      "input": "15\n",
+      "output": "0"
+    },
+    {
+      "name": "q1_composite_not_abundant_21",
+      "input": "21\n",
+      "output": "0"
+    },
+    {
+      "name": "q1_composite_not_abundant_22",
+      "input": "22\n",
+      "output": "0"
+    },
+    {
+      "name": "q1_square_not_abundant_25",
+      "input": "25\n",
+      "output": "0"
+    },
+    {
+      "name": "q1_cube_like_27_not_abundant",
+      "input": "27\n",
+      "output": "0"
+    },
+
+    {
+      "name": "q1_abundant_18",
+      "input": "18\n",
+      "output": "1"
+    },
+    {
+      "name": "q1_abundant_20",
+      "input": "20\n",
+      "output": "1"
+    },
+    {
+      "name": "q1_abundant_24",
+      "input": "24\n",
+      "output": "1"
+    },
+    {
+      "name": "q1_abundant_30",
+      "input": "30\n",
+      "output": "1"
+    },
+    {
+      "name": "q1_abundant_36",
+      "input": "36\n",
+      "output": "1"
+    },
+    {
+      "name": "q1_abundant_40",
+      "input": "40\n",
+      "output": "1"
+    },
+    {
+      "name": "q1_abundant_42_many_divisors",
+      "input": "42\n",
+      "output": "1"
+    },
+    {
+      "name": "q1_abundant_48",
+      "input": "48\n",
+      "output": "1"
+    },
+    {
+      "name": "q1_abundant_54",
+      "input": "54\n",
+      "output": "1"
+    },
+    {
+      "name": "q1_abundant_56",
+      "input": "56\n",
+      "output": "1"
+    },
+    {
+      "name": "q1_abundant_60",
+      "input": "60\n",
+      "output": "1"
+    },
+    {
+      "name": "q1_abundant_70",
+      "input": "70\n",
+      "output": "1"
+    },
+    {
+      "name": "q1_abundant_72",
+      "input": "72\n",
+      "output": "1"
+    },
+    {
+      "name": "q1_abundant_84",
+      "input": "84\n",
+      "output": "1"
+    },
+    {
+      "name": "q1_abundant_90",
+      "input": "90\n",
+      "output": "1"
+    },
+    {
+      "name": "q1_abundant_100",
+      "input": "100\n",
+      "output": "1"
+    },
+
+    {
+      "name": "q1_odd_abundant_945",
+      "input": "945\n",
+      "output": "1"
+    },
+    {
+      "name": "q1_highly_composite_abundant_360",
+      "input": "360\n",
+      "output": "1"
+    }
+  ]
+}
