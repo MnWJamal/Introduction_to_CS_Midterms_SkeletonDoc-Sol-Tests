@@ -1,8 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void midterm_quiz_q3(char arr[], int n);
+void midterm_quiz_q3(char arr[], int n); //WRITE YOUR CODE HERE
 
+
+
+
+//DO NOT CHANGE ANYTHING BELOW
 static void readArr(char *arr, int n)
 {
     for (int i = 0; i < n; i++) {
