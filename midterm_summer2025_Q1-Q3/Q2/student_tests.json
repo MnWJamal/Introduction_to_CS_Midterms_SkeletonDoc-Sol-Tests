@@ -1,0 +1,209 @@
+{
+  "tests": [
+    {
+      "name": "ex_azab",
+      "input": "4\nazab\n",
+      "output": "a a b z\n"
+    },
+    {
+      "name": "ex_zzzzx",
+      "input": "5\nzzzzx\n",
+      "output": "x z z z z\n"
+    },
+    {
+      "name": "n0_empty",
+      "input": "0\n\n",
+      "output": "\n"
+    },
+    {
+      "name": "n1_a",
+      "input": "1\na\n",
+      "output": "a\n"
+    },
+    {
+      "name": "n1_z",
+      "input": "1\nz\n",
+      "output": "z\n"
+    },
+    {
+      "name": "n2_sorted",
+      "input": "2\na b\n",
+      "output": "a b\n"
+    },
+    {
+      "name": "n2_rev",
+      "input": "2\nb a\n",
+      "output": "a b\n"
+    },
+    {
+      "name": "n2_same",
+      "input": "2\nc c\n",
+      "output": "c c\n"
+    },
+    {
+      "name": "all_same_10",
+      "input": "10\nm m m m m m m m m m\n",
+      "output": "m m m m m m m m m m\n"
+    },
+    {
+      "name": "already_sorted_dup",
+      "input": "9\naaabbbccc\n",
+      "output": "a a a b b b c c c\n"
+    },
+    {
+      "name": "reverse_sorted",
+      "input": "5\nzyxwv\n",
+      "output": "v w x y z\n"
+    },
+    {
+      "name": "mixed_dup",
+      "input": "6\nbanana\n",
+      "output": "a a a b n n\n"
+    },
+    {
+      "name": "many_a_then_z",
+      "input": "10\nz z z z z a a a a a\n",
+      "output": "a a a a a z z z z z\n"
+    },
+    {
+      "name": "alternating_az",
+      "input": "20\nazazazazazazazazazaz\n",
+      "output": "a a a a a a a a a a z z z z z z z z z z\n"
+    },
+    {
+      "name": "only_a_and_z",
+      "input": "8\nzzzzaaaa\n",
+      "output": "a a a a z z z z\n"
+    },
+    {
+      "name": "all_letters_once",
+      "input": "26\na b c d e f g h i j k l m n o p q r s t u v w x y z\n",
+      "output": "a b c d e f g h i j k l m n o p q r s t u v w x y z\n"
+    },
+    {
+      "name": "all_letters_once_rev",
+      "input": "26\nz y x w v u t s r q p o n m l k j i h g f e d c b a\n",
+      "output": "a b c d e f g h i j k l m n o p q r s t u v w x y z\n"
+    },
+    {
+      "name": "rand_00",
+      "input": "10\ne m u b c r d l s b\n",
+      "output": "b b c d e l m r s u\n"
+    },
+    {
+      "name": "rand_01",
+      "input": "30\ng b c n n c h c r n b s d h u u s b s s m b h b r e j n e r\n",
+      "output": "b b b b b c c c d e e g h h h j m n n n n r r r s s s s u u\n"
+    },
+    {
+      "name": "rand_02",
+      "input": "5\ns j r v f\n",
+      "output": "f j r s v\n"
+    },
+    {
+      "name": "rand_03",
+      "input": "5\ns s u g l\n",
+      "output": "g l s s u\n"
+    },
+    {
+      "name": "rand_04",
+      "input": "5\nr w c s b\n",
+      "output": "b c r s w\n"
+    },
+    {
+      "name": "rand_05",
+      "input": "30\ng p v r n y k o s o l j h z f w y h c s j q p k x o j t c d\n",
+      "output": "c c d f g h h j j j k k l n o o o p p q r s s t v w x y y z\n"
+    },
+    {
+      "name": "rand_06",
+      "input": "30\nn f y k e p n b v c y r s z k k w l t p s z o c c i p w v c\n",
+      "output": "b c c c c e f i k k k l n n o p p p r s s t v v w w y y z z\n"
+    },
+    {
+      "name": "rand_07",
+      "input": "5\nx w j u s\n",
+      "output": "j s u w x\n"
+    },
+    {
+      "name": "rand_08",
+      "input": "15\nj w m v l a o l f t d p b g y\n",
+      "output": "a b d f g j l l m o p t v w y\n"
+    },
+    {
+      "name": "rand_09",
+      "input": "10\ne x h m m p c f o m\n",
+      "output": "c e f h m m m o p x\n"
+    },
+    {
+      "name": "rand_10",
+      "input": "30\ni e n r i w n l v m h e c f e h v h a p s f i j a e n r l t\n",
+      "output": "a a c e e e e f f h h h i i i j l l m n n n p r r s t v v w\n"
+    },
+    {
+      "name": "rand_11",
+      "input": "30\nk e w q t u v x b o y v z r m m m m d p u m b g c g o f d k\n",
+      "output": "b b c d d e f g g k k m m m m m o o p q r t u u v v w x y z\n"
+    },
+    {
+      "name": "rand_12",
+      "input": "30\nb d a s e r d l t a c g t m e u i l t l p d d p o p p j c e\n",
+      "output": "a a b c c d d d d e e e g i j l l l m o p p p p r s t t t u\n"
+    },
+    {
+      "name": "rand_13",
+      "input": "5\nx k x i p\n",
+      "output": "i k p x x\n"
+    },
+    {
+      "name": "rand_14",
+      "input": "7\nq a g q l e w\n",
+      "output": "a e g l q q w\n"
+    },
+    {
+      "name": "rand_15",
+      "input": "30\na y q j u c w i q l f l y h r r y q k u h t z z y g z h m x\n",
+      "output": "a c f g h h h i j k l l m q q q r r t u u w x y y y y z z z\n"
+    },
+    {
+      "name": "rand_16",
+      "input": "7\ng q p l x a a\n",
+      "output": "a a g l p q x\n"
+    },
+    {
+      "name": "rand_17",
+      "input": "10\np i g w t l o z x l\n",
+      "output": "g i l l o p t w x z\n"
+    },
+    {
+      "name": "rand_18",
+      "input": "10\nc h d h p g k g p t\n",
+      "output": "c d g g h h k p p t\n"
+    },
+    {
+      "name": "rand_19",
+      "input": "30\na p u l z u c v d m z w y g p f n z u k c z x m o m x c x f\n",
+      "output": "a c c c d f f g k l m m m n o p p u u u v w x x x y z z z z\n"
+    },
+    {
+      "name": "big_200",
+      "input": "200\nh l m e g w b c e h z q g m u a o p o m p s g m c p h y a w i q n p m x d v i d c m t m d v b k h w c p u q g s z e t c r b p w g e s o x s o j r l n e f y t d r w k w l u p q t g j e l q j q v c z q w r h l h a j k h i b n i m j w n f v m d f v a g y f j d a z y m k f s n h e n s o n n c s c j w d b c v d y q q l e z q p w e t c g a e k m v s d x j l k l a u p g b t b y z s f f k n o d c g t h p\n",
+      "output": "a a a a a a a b b b b b b b c c c c c c c c c c c d d d d d d d d d d e e e e e e e e e e f f f f f f f g g g g g g g g g g h h h h h h h h h i i i i j j j j j j j j k k k k k k k l l l l l l l l m m m m m m m m m m m n n n n n n n n n o o o o o o p p p p p p p p p p q q q q q q q q q q r r r r s s s s s s s s s t t t t t t t u u u u v v v v v v v w w w w w w w w w w x x x y y y y y y z z z z z z\n"
+    },
+    {
+      "name": "big_1000",
+      "input": "1000\nz p z e m d d s x o u e x o q x c w p s m l o h b g b o d d g x a w t t a u l n q c x y t q w s g q h k q m x q u g a j t j c x k m h u j c r n x l z x k q j u l z j u d g p l m s j g j m t m v q w x l v t s l v n g p q q c i f c p x i n y d t i j i z q i i u n h l h h z q x o h h z t q g l p y d z d m c u f y s n b z e a t g v i c d o o v j s c e t l u c k z b c e u z l c h x b t z k h j x l k c q d x t l n f f i m e n x z c d r h c j f k x g d b b r z x f f r u k j h x q p d s w c e x e h k g n f f e y o b w o s v t j n n s v x l w s w p l x y q f j i v p e i p u q r z q j z g s q m y e p u p d j m b b l q j l m w a t e w a c f o s e y n s u s d l q b t w u l l d k u d p f u h p l s l l y z n l x u v b x e w v u k b b h q l p l p r f j e u i z a z o x j s v i o j j m p o v u c p u o k e s x d l w t v o l p s m g r q w s f z e q b c r z v y j g e u m i z g d a b o w g k k a a x a x e s j u j a b g k k c n h a v d q q g p y w n d n q e c e v w y z v w l t n v b i n w v g a j c y p k w f h b m w j i j q i t a m z g w w w w g g d z y u y p e w k h u c n l q r v p o t l t e t f p d h q z k t f r h h n x v t g k w e s y i c o k s e v h x t m a k m l y j d d m v v o n t a p k r w g a y a w t w q k l w p s d t f d b o i c r a g h u c b k l m w k p t f p x z i u b p o s y h z r v z w b q y q u m o q p z v f d s t q z w f k x j s r m t d o r f j f x z l l q b v m t i c h r w w p o j w g p r c u c u j c f m d r d f f w p k s h w g o h y m a q l j d q q p s b s d o x l i k d d g p n s o d w e a l e m o k v q w n t d z m p v u n e y c x f h o g i t r v e g q a k l c z f q k r n x j e h m a s d e h c y f u e p j r m c o w j c m o p n k p x h j b s v d a r t l u w n a x i w l b u u f t c r p b q a b x d k e h l l z q v r l c h u g q h i d u n a g a d y n k e q i h b k l q m y q f t k z y u u w j f a w i x a q b t t z j r e j r t g a e w b x q y t e l i o x v i l w j w v e l o o t w h y q v u z r k c r i s y v a j k q d i a a s o w m u w s q g a w a e z u r b k k r u h y m r s g\n",
+      "output": "a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f g g g g g g g g g g g g g g g g g g g g g g g g g g g g g g g g g g g h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i j j j j j j j j j j j j j j j j j j j j j j j j j j j j j j j j j j j j j j j j j j k k k k k k k k k k k k k k k k k k k k k k k k k k k k k k k k k k k k k k k k k l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m n n n n n n n n n n n n n n n n n n n n n n n n n n n n n o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x y y y y y y y y y y y y y y y y y y y y y y y y y y y y y y z z z z z z z z z z z z z z z z z z z z z z z z z z z z z z z z z z z z z z z\n"
+    },
+    {
+      "name": "whitespace_messy",
+      "input": "4\na  z  a  b\n",
+      "output": "a a b z\n"
+    },
+    {
+      "name": "no_spaces_glued",
+      "input": "10\nhelloworld\n",
+      "output": "d e h l l l o o r w\n"
+    }
+  ]
+}
