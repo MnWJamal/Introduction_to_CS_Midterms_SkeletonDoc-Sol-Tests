@@ -1,0 +1,204 @@
+{
+  "tests": [
+    {
+      "name": "q1_basic_pdf_example",
+      "input": "7\n2 7 5 -1 8 2 0\n",
+      "output": "Numbers smaller than 2: 0\nNumbers smaller than 7: 3\nNumbers smaller than 5: 2\nNumbers smaller than -1: 0\nNumbers smaller than 8: 4\nNumbers smaller than 2: 0\nNumbers smaller than 0: 0\n"
+    },
+    {
+      "name": "q1_single_zero",
+      "input": "1\n0\n",
+      "output": "Numbers smaller than 0: 0\n"
+    },
+    {
+      "name": "q1_single_one",
+      "input": "1\n1\n",
+      "output": "Numbers smaller than 1: 0\n"
+    },
+    {
+      "name": "q1_single_two",
+      "input": "1\n2\n",
+      "output": "Numbers smaller than 2: 0\n"
+    },
+    {
+      "name": "q1_single_negative",
+      "input": "1\n-5\n",
+      "output": "Numbers smaller than -5: 0\n"
+    },
+    {
+      "name": "q1_all_negative",
+      "input": "4\n-1 -2 -3 -4\n",
+      "output": "Numbers smaller than -1: 0\nNumbers smaller than -2: 0\nNumbers smaller than -3: 0\nNumbers smaller than -4: 0\n"
+    },
+    {
+      "name": "q1_all_zeroes",
+      "input": "4\n0 0 0 0\n",
+      "output": "Numbers smaller than 0: 0\nNumbers smaller than 0: 0\nNumbers smaller than 0: 0\nNumbers smaller than 0: 0\n"
+    },
+    {
+      "name": "q1_all_ones",
+      "input": "4\n1 1 1 1\n",
+      "output": "Numbers smaller than 1: 0\nNumbers smaller than 1: 0\nNumbers smaller than 1: 0\nNumbers smaller than 1: 0\n"
+    },
+    {
+      "name": "q1_all_same_positive",
+      "input": "4\n5 5 5 5\n",
+      "output": "Numbers smaller than 5: 0\nNumbers smaller than 5: 0\nNumbers smaller than 5: 0\nNumbers smaller than 5: 0\n"
+    },
+    {
+      "name": "q1_increasing_positives",
+      "input": "5\n1 2 3 4 5\n",
+      "output": "Numbers smaller than 1: 0\nNumbers smaller than 2: 1\nNumbers smaller than 3: 2\nNumbers smaller than 4: 3\nNumbers smaller than 5: 4\n"
+    },
+    {
+      "name": "q1_decreasing_positives",
+      "input": "5\n5 4 3 2 1\n",
+      "output": "Numbers smaller than 5: 4\nNumbers smaller than 4: 3\nNumbers smaller than 3: 2\nNumbers smaller than 2: 1\nNumbers smaller than 1: 0\n"
+    },
+    {
+      "name": "q1_mixed_with_duplicates",
+      "input": "5\n3 3 1 2 2\n",
+      "output": "Numbers smaller than 3: 3\nNumbers smaller than 3: 3\nNumbers smaller than 1: 0\nNumbers smaller than 2: 1\nNumbers smaller than 2: 1\n"
+    },
+    {
+      "name": "q1_mixed_with_zeroes",
+      "input": "6\n0 3 0 2 0 1\n",
+      "output": "Numbers smaller than 0: 0\nNumbers smaller than 3: 2\nNumbers smaller than 0: 0\nNumbers smaller than 2: 1\nNumbers smaller than 0: 0\nNumbers smaller than 1: 0\n"
+    },
+    {
+      "name": "q1_mixed_neg_pos",
+      "input": "5\n-5 1 2 3 -1\n",
+      "output": "Numbers smaller than -5: 0\nNumbers smaller than 1: 0\nNumbers smaller than 2: 1\nNumbers smaller than 3: 2\nNumbers smaller than -1: 0\n"
+    },
+    {
+      "name": "q1_many_smaller_count_duplicates",
+      "input": "8\n10 1 1 1 2 2 3 3\n",
+      "output": "Numbers smaller than 10: 7\nNumbers smaller than 1: 0\nNumbers smaller than 1: 0\nNumbers smaller than 1: 0\nNumbers smaller than 2: 3\nNumbers smaller than 2: 3\nNumbers smaller than 3: 5\nNumbers smaller than 3: 5\n"
+    },
+    {
+      "name": "q1_contains_int_min_int_max",
+      "input": "5\n2147483647 1 2 -2147483648 2\n",
+      "output": "Numbers smaller than 2147483647: 3\nNumbers smaller than 1: 0\nNumbers smaller than 2: 1\nNumbers smaller than -2147483648: 0\nNumbers smaller than 2: 1\n"
+    },
+    {
+      "name": "q1_large_values",
+      "input": "5\n1000000 999999 1 500000 500000\n",
+      "output": "Numbers smaller than 1000000: 4\nNumbers smaller than 999999: 3\nNumbers smaller than 1: 0\nNumbers smaller than 500000: 1\nNumbers smaller than 500000: 1\n"
+    },
+    {
+      "name": "q1_only_one_positive_many_nonpos",
+      "input": "5\n-3 0 -1 -2 7\n",
+      "output": "Numbers smaller than -3: 0\nNumbers smaller than 0: 0\nNumbers smaller than -1: 0\nNumbers smaller than -2: 0\nNumbers smaller than 7: 0\n"
+    },
+    {
+      "name": "q1_positive_with_many_smaller_nonpos",
+      "input": "6\n4 0 -1 1 2 3\n",
+      "output": "Numbers smaller than 4: 3\nNumbers smaller than 0: 0\nNumbers smaller than -1: 0\nNumbers smaller than 1: 0\nNumbers smaller than 2: 1\nNumbers smaller than 3: 2\n"
+    },
+    {
+      "name": "q1_repeated_twos_with_ones",
+      "input": "6\n2 2 2 1 1 1\n",
+      "output": "Numbers smaller than 2: 3\nNumbers smaller than 2: 3\nNumbers smaller than 2: 3\nNumbers smaller than 1: 0\nNumbers smaller than 1: 0\nNumbers smaller than 1: 0\n"
+    },
+    {
+      "name": "q1_repeated_threes_mixed",
+      "input": "7\n3 1 3 2 3 0 -3\n",
+      "output": "Numbers smaller than 3: 2\nNumbers smaller than 1: 0\nNumbers smaller than 3: 2\nNumbers smaller than 2: 1\nNumbers smaller than 3: 2\nNumbers smaller than 0: 0\nNumbers smaller than -3: 0\n"
+    },
+    {
+      "name": "q1_random_small",
+      "input": "6\n2 -1 4 2 1 0\n",
+      "output": "Numbers smaller than 2: 1\nNumbers smaller than -1: 0\nNumbers smaller than 4: 3\nNumbers smaller than 2: 1\nNumbers smaller than 1: 0\nNumbers smaller than 0: 0\n"
+    },
+    {
+      "name": "q1_random_medium",
+      "input": "9\n7 3 3 9 1 2 0 -2 5\n",
+      "output": "Numbers smaller than 7: 5\nNumbers smaller than 3: 2\nNumbers smaller than 3: 2\nNumbers smaller than 9: 6\nNumbers smaller than 1: 0\nNumbers smaller than 2: 1\nNumbers smaller than 0: 0\nNumbers smaller than -2: 0\nNumbers smaller than 5: 4\n"
+    },
+    {
+      "name": "q1_all_primes",
+      "input": "6\n2 3 5 7 11 13\n",
+      "output": "Numbers smaller than 2: 0\nNumbers smaller than 3: 1\nNumbers smaller than 5: 2\nNumbers smaller than 7: 3\nNumbers smaller than 11: 4\nNumbers smaller than 13: 5\n"
+    },
+    {
+      "name": "q1_all_even",
+      "input": "5\n2 4 6 8 10\n",
+      "output": "Numbers smaller than 2: 0\nNumbers smaller than 4: 1\nNumbers smaller than 6: 2\nNumbers smaller than 8: 3\nNumbers smaller than 10: 4\n"
+    },
+    {
+      "name": "q1_all_odd",
+      "input": "5\n1 3 5 7 9\n",
+      "output": "Numbers smaller than 1: 0\nNumbers smaller than 3: 1\nNumbers smaller than 5: 2\nNumbers smaller than 7: 3\nNumbers smaller than 9: 4\n"
+    },
+    {
+      "name": "q1_many_same_small",
+      "input": "13\n2 2 2 2 2 2 2 2 2 2 1 1 1\n",
+      "output": "Numbers smaller than 2: 3\nNumbers smaller than 2: 3\nNumbers smaller than 2: 3\nNumbers smaller than 2: 3\nNumbers smaller than 2: 3\nNumbers smaller than 2: 3\nNumbers smaller than 2: 3\nNumbers smaller than 2: 3\nNumbers smaller than 2: 3\nNumbers smaller than 2: 3\nNumbers smaller than 1: 0\nNumbers smaller than 1: 0\nNumbers smaller than 1: 0\n"
+    },
+    {
+      "name": "q1_many_same_large",
+      "input": "11\n100 100 100 100 100 99 99 99 99 99 1\n",
+      "output": "Numbers smaller than 100: 6\nNumbers smaller than 100: 6\nNumbers smaller than 100: 6\nNumbers smaller than 100: 6\nNumbers smaller than 100: 6\nNumbers smaller than 99: 1\nNumbers smaller than 99: 1\nNumbers smaller than 99: 1\nNumbers smaller than 99: 1\nNumbers smaller than 99: 1\nNumbers smaller than 1: 0\n"
+    },
+    {
+      "name": "q1_negatives_and_large_positive",
+      "input": "5\n-100 -50 -1 0 50\n",
+      "output": "Numbers smaller than -100: 0\nNumbers smaller than -50: 0\nNumbers smaller than -1: 0\nNumbers smaller than 0: 0\nNumbers smaller than 50: 0\n"
+    },
+    {
+      "name": "q1_pos_and_neg_interleaved",
+      "input": "10\n5 -1 4 -2 3 -3 2 -4 1 -5\n",
+      "output": "Numbers smaller than 5: 4\nNumbers smaller than -1: 0\nNumbers smaller than 4: 3\nNumbers smaller than -2: 0\nNumbers smaller than 3: 2\nNumbers smaller than -3: 0\nNumbers smaller than 2: 1\nNumbers smaller than -4: 0\nNumbers smaller than 1: 0\nNumbers smaller than -5: 0\n"
+    },
+    {
+      "name": "q1_two_elements_swap",
+      "input": "2\n2 1\n",
+      "output": "Numbers smaller than 2: 1\nNumbers smaller than 1: 0\n"
+    },
+    {
+      "name": "q1_two_elements_same",
+      "input": "2\n2 2\n",
+      "output": "Numbers smaller than 2: 0\nNumbers smaller than 2: 0\n"
+    },
+    {
+      "name": "q1_two_elements_neg_pos",
+      "input": "2\n-1 2\n",
+      "output": "Numbers smaller than -1: 0\nNumbers smaller than 2: 0\n"
+    },
+    {
+      "name": "q1_three_elements_with_zero",
+      "input": "3\n1 0 2\n",
+      "output": "Numbers smaller than 1: 0\nNumbers smaller than 0: 0\nNumbers smaller than 2: 1\n"
+    },
+    {
+      "name": "q1_three_elements_all_pos_dup",
+      "input": "3\n2 1 2\n",
+      "output": "Numbers smaller than 2: 1\nNumbers smaller than 1: 0\nNumbers smaller than 2: 1\n"
+    },
+    {
+      "name": "q1_three_elements_all_pos_inc",
+      "input": "3\n1 2 3\n",
+      "output": "Numbers smaller than 1: 0\nNumbers smaller than 2: 1\nNumbers smaller than 3: 2\n"
+    },
+    {
+      "name": "q1_three_elements_all_pos_dec",
+      "input": "3\n3 2 1\n",
+      "output": "Numbers smaller than 3: 2\nNumbers smaller than 2: 1\nNumbers smaller than 1: 0\n"
+    },
+    {
+      "name": "q1_big_random_25",
+      "input": "25\n7 8 -4 3 10 7 4 10 6 1 -1 4 -1 -2 3 -1 4 -2 -3 5 10 -2 6 8 5\n",
+      "output": "Numbers smaller than 7: 10\nNumbers smaller than 8: 12\nNumbers smaller than -4: 0\nNumbers smaller than 3: 1\nNumbers smaller than 10: 14\nNumbers smaller than 7: 10\nNumbers smaller than 4: 3\nNumbers smaller than 10: 14\nNumbers smaller than 6: 8\nNumbers smaller than 1: 0\nNumbers smaller than -1: 0\nNumbers smaller than 4: 3\nNumbers smaller than -1: 0\nNumbers smaller than -2: 0\nNumbers smaller than 3: 1\nNumbers smaller than -1: 0\nNumbers smaller than 4: 3\nNumbers smaller than -2: 0\nNumbers smaller than -3: 0\nNumbers smaller than 5: 6\nNumbers smaller than 10: 14\nNumbers smaller than -2: 0\nNumbers smaller than 6: 8\nNumbers smaller than 8: 12\nNumbers smaller than 5: 6\n"
+    },
+    {
+      "name": "q1_big_random_60",
+      "input": "60\n56 63 -48 41 22 13 33 -34 -85 40 -97 -77 84 2 81 100 71 60 -100 56 26 -15 -38 86 -17 80 -84 -52 45 -44 -39 -64 39 14 -77 -80 -19 30 25 -73 -23 41 -26 80 -69 40 -15 38 -48 54 40 50 -27 13 -77 52 -2 -19 47 -39\n",
+      "output": "Numbers smaller than 56: 21\nNumbers smaller than 63: 24\nNumbers smaller than -48: 0\nNumbers smaller than 41: 14\nNumbers smaller than 22: 4\nNumbers smaller than 13: 1\nNumbers smaller than 33: 8\nNumbers smaller than -34: 0\nNumbers smaller than -85: 0\nNumbers smaller than 40: 11\nNumbers smaller than -97: 0\nNumbers smaller than -77: 0\nNumbers smaller than 84: 29\nNumbers smaller than 2: 0\nNumbers smaller than 81: 28\nNumbers smaller than 100: 31\nNumbers smaller than 71: 25\nNumbers smaller than 60: 23\nNumbers smaller than -100: 0\nNumbers smaller than 56: 21\nNumbers smaller than 26: 6\nNumbers smaller than -15: 0\nNumbers smaller than -38: 0\nNumbers smaller than 86: 30\nNumbers smaller than -17: 0\nNumbers smaller than 80: 26\nNumbers smaller than -84: 0\nNumbers smaller than -52: 0\nNumbers smaller than 45: 16\nNumbers smaller than -44: 0\nNumbers smaller than -39: 0\nNumbers smaller than -64: 0\nNumbers smaller than 39: 10\nNumbers smaller than 14: 3\nNumbers smaller than -77: 0\nNumbers smaller than -80: 0\nNumbers smaller than -19: 0\nNumbers smaller than 30: 7\nNumbers smaller than 25: 5\nNumbers smaller than -73: 0\nNumbers smaller than -23: 0\nNumbers smaller than 41: 14\nNumbers smaller than -26: 0\nNumbers smaller than 80: 26\nNumbers smaller than -69: 0\nNumbers smaller than 40: 11\nNumbers smaller than -15: 0\nNumbers smaller than 38: 9\nNumbers smaller than -48: 0\nNumbers smaller than 54: 20\nNumbers smaller than 40: 11\nNumbers smaller than 50: 18\nNumbers smaller than -27: 0\nNumbers smaller than 13: 1\nNumbers smaller than -77: 0\nNumbers smaller than 52: 19\nNumbers smaller than -2: 0\nNumbers smaller than -19: 0\nNumbers smaller than 47: 17\nNumbers smaller than -39: 0\n"
+    },
+    {
+      "name": "q1_whitespace_torture",
+      "input": "7\n 2   7\n5   -1  \n8 2   0\n",
+      "output": "Numbers smaller than 2: 0\nNumbers smaller than 7: 3\nNumbers smaller than 5: 2\nNumbers smaller than -1: 0\nNumbers smaller than 8: 4\nNumbers smaller than 2: 0\nNumbers smaller than 0: 0\n"
+    }
+  ]
+}
