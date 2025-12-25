@@ -11,7 +11,7 @@ bool midterm_quiz_q2(int arr[], int n) {
         if (seen != arr[i]) return false;
     }
     return true;
-} // Replace this line with your function.
+}
 
 // Do not change this function
 void fillArray(int arr[], int n) {
