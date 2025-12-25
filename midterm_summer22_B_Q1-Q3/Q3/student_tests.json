@@ -1,0 +1,1364 @@
+{
+  "tests": [
+    {
+      "name": "pdf_example",
+      "input": "100 90 20\n95 95 95\n90 80 100\n55 100 90\n",
+      "output": "2"
+    },
+    {
+      "name": "all_equal_avg_all_have_max",
+      "input": "100 0 0\n100 0 0\n100 0 0\n100 0 0\n",
+      "output": "0"
+    },
+    {
+      "name": "all_equal_avg_only_one_has_max",
+      "input": "99 1 0\n98 2 0\n97 3 0\n100 0 0\n",
+      "output": "3"
+    },
+    {
+      "name": "max_only_in_excluded_row",
+      "input": "99 99 99\n98 98 98\n97 97 97\n100 0 0\n",
+      "output": "-1"
+    },
+    {
+      "name": "tie_at_third_place_expands",
+      "input": "100 0 0\n50 50 0\n40 60 0\n0 99 0\n",
+      "output": "0"
+    },
+    {
+      "name": "max_multiple_some_not_top3",
+      "input": "100 0 0\n90 90 90\n100 80 0\n85 85 85\n",
+      "output": "2"
+    },
+    {
+      "name": "global_max_87",
+      "input": "87 0 0\n80 80 0\n79 79 0\n78 78 0\n",
+      "output": "-1"
+    },
+    {
+      "name": "max_at_row0_and_top3",
+      "input": "100 50 0\n90 90 0\n80 80 0\n70 70 0\n",
+      "output": "0"
+    },
+    {
+      "name": "two_excellents_choose_min",
+      "input": "100 99 99\n100 98 98\n97 97 97\n96 96 96\n",
+      "output": "0"
+    },
+    {
+      "name": "double_max_in_row",
+      "input": "100 100 0\n99 99 99\n98 98 98\n97 97 97\n",
+      "output": "-1"
+    },
+    {
+      "name": "max_everywhere_top3_rule",
+      "input": "100 0 0\n100 1 0\n100 2 0\n100 3 0\n",
+      "output": "1"
+    },
+    {
+      "name": "whitespace_messy",
+      "input": "100   90   20   95   95   95   90\n80   100   55   100   90\n",
+      "output": "2"
+    },
+    {
+      "name": "rand_000",
+      "input": "45 13 51\n56 13 59\n66 72 53\n100 35 62\n",
+      "output": "3"
+    },
+    {
+      "name": "rand_001",
+      "input": "78 93 14\n22 49 65\n46 17 68\n30 8 27\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_002",
+      "input": "11 56 59\n41 93 12\n79 86 28\n47 23 68\n",
+      "output": "1"
+    },
+    {
+      "name": "rand_003",
+      "input": "69 12 28\n14 39 20\n97 35 1\n3 3 50\n",
+      "output": "2"
+    },
+    {
+      "name": "rand_004",
+      "input": "0 36 14\n51 72 79\n72 23 47\n47 9 16\n",
+      "output": "1"
+    },
+    {
+      "name": "rand_005",
+      "input": "62 73 94\n56 73 45\n38 21 19\n19 62 66\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_006",
+      "input": "38 46 82\n50 3 82\n31 33 36\n85 26 46\n",
+      "output": "3"
+    },
+    {
+      "name": "rand_007",
+      "input": "72 49 100\n88 78 13\n75 92 38\n16 43 31\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_008",
+      "input": "69 95 17\n12 13 32\n4 35 3\n32 29 57\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_009",
+      "input": "61 10 30\n44 89 65\n65 86 74\n60 44 13\n",
+      "output": "1"
+    },
+    {
+      "name": "rand_010",
+      "input": "5 40 86\n67 62 3\n65 32 19\n17 11 93\n",
+      "output": "3"
+    },
+    {
+      "name": "rand_011",
+      "input": "53 22 87\n24 89 10\n26 12 76\n93 72 86\n",
+      "output": "3"
+    },
+    {
+      "name": "rand_012",
+      "input": "58 54 89\n100 44 15\n19 71 36\n89 35 37\n",
+      "output": "1"
+    },
+    {
+      "name": "rand_013",
+      "input": "42 94 90\n91 58 34\n60 27 33\n100 75 37\n",
+      "output": "3"
+    },
+    {
+      "name": "rand_014",
+      "input": "44 65 82\n47 62 15\n16 12 81\n55 11 7\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_015",
+      "input": "47 19 32\n36 93 98\n59 71 57\n1 78 13\n",
+      "output": "1"
+    },
+    {
+      "name": "rand_016",
+      "input": "59 79 14\n37 38 2\n39 70 50\n55 69 85\n",
+      "output": "3"
+    },
+    {
+      "name": "rand_017",
+      "input": "35 64 58\n97 14 22\n78 84 21\n74 81 93\n",
+      "output": "-1"
+    },
+    {
+      "name": "rand_018",
+      "input": "40 16 5\n67 92 5\n90 100 21\n93 22 49\n",
+      "output": "2"
+    },
+    {
+      "name": "rand_019",
+      "input": "85 61 6\n39 61 18\n73 72 49\n35 65 53\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_020",
+      "input": "14 14 34\n39 22 26\n0 49 47\n37 79 65\n",
+      "output": "3"
+    },
+    {
+      "name": "rand_021",
+      "input": "88 1 44\n9 76 16\n63 53 93\n49 62 11\n",
+      "output": "2"
+    },
+    {
+      "name": "rand_022",
+      "input": "62 58 14\n33 80 46\n84 35 97\n48 38 23\n",
+      "output": "2"
+    },
+    {
+      "name": "rand_023",
+      "input": "71 76 28\n1 79 95\n47 95 43\n26 42 26\n",
+      "output": "1"
+    },
+    {
+      "name": "rand_024",
+      "input": "91 81 44\n90 66 42\n36 83 65\n83 7 15\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_025",
+      "input": "76 61 23\n69 39 16\n96 21 55\n58 79 95\n",
+      "output": "2"
+    },
+    {
+      "name": "rand_026",
+      "input": "72 12 52\n79 67 43\n63 24 55\n15 95 81\n",
+      "output": "3"
+    },
+    {
+      "name": "rand_027",
+      "input": "77 51 61\n62 94 29\n2 30 91\n55 73 44\n",
+      "output": "1"
+    },
+    {
+      "name": "rand_028",
+      "input": "16 94 1\n65 32 5\n77 87 27\n57 96 79\n",
+      "output": "3"
+    },
+    {
+      "name": "rand_029",
+      "input": "80 23 78\n80 33 61\n31 12 16\n57 0 77\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_030",
+      "input": "11 52 3\n62 76 42\n6 36 82\n77 23 74\n",
+      "output": "2"
+    },
+    {
+      "name": "rand_031",
+      "input": "48 57 96\n53 48 95\n38 65 58\n68 37 98\n",
+      "output": "3"
+    },
+    {
+      "name": "rand_032",
+      "input": "58 99 11\n41 81 28\n60 31 48\n94 42 82\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_033",
+      "input": "26 27 55\n8 74 87\n50 7 78\n52 87 41\n",
+      "output": "1"
+    },
+    {
+      "name": "rand_034",
+      "input": "77 45 5\n41 98 58\n46 9 26\n59 19 95\n",
+      "output": "1"
+    },
+    {
+      "name": "rand_035",
+      "input": "86 1 85\n87 66 62\n68 38 95\n55 51 79\n",
+      "output": "2"
+    },
+    {
+      "name": "rand_036",
+      "input": "72 36 89\n51 87 34\n54 8 62\n68 16 75\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_037",
+      "input": "86 40 39\n30 70 57\n43 39 6\n18 76 73\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_038",
+      "input": "18 66 54\n16 76 27\n45 16 43\n69 13 55\n",
+      "output": "1"
+    },
+    {
+      "name": "rand_039",
+      "input": "79 4 3\n19 76 36\n17 48 64\n7 94 52\n",
+      "output": "3"
+    },
+    {
+      "name": "rand_040",
+      "input": "39 79 82\n100 54 46\n44 72 25\n13 92 32\n",
+      "output": "1"
+    },
+    {
+      "name": "rand_041",
+      "input": "32 38 50\n79 48 79\n51 77 60\n16 68 55\n",
+      "output": "1"
+    },
+    {
+      "name": "rand_042",
+      "input": "19 44 36\n86 43 69\n28 7 21\n37 46 67\n",
+      "output": "1"
+    },
+    {
+      "name": "rand_043",
+      "input": "84 25 22\n29 79 41\n54 14 9\n93 38 49\n",
+      "output": "3"
+    },
+    {
+      "name": "rand_044",
+      "input": "48 10 68\n76 44 46\n68 68 62\n43 32 45\n",
+      "output": "1"
+    },
+    {
+      "name": "rand_045",
+      "input": "85 53 8\n18 89 17\n1 48 37\n20 13 54\n",
+      "output": "1"
+    },
+    {
+      "name": "rand_046",
+      "input": "98 79 3\n88 63 53\n93 94 7\n20 85 40\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_047",
+      "input": "82 72 99\n2 24 37\n27 71 58\n57 11 3\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_048",
+      "input": "7 94 47\n32 49 63\n18 85 44\n82 25 41\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_049",
+      "input": "10 96 4\n9 17 65\n73 11 18\n84 88 71\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_050",
+      "input": "12 43 92\n1 32 13\n30 45 5\n64 13 10\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_051",
+      "input": "6 8 5\n95 62 71\n46 95 13\n67 95 24\n",
+      "output": "1"
+    },
+    {
+      "name": "rand_052",
+      "input": "33 71 8\n62 90 83\n41 44 23\n67 62 60\n",
+      "output": "1"
+    },
+    {
+      "name": "rand_053",
+      "input": "32 15 73\n85 0 28\n18 41 75\n46 89 97\n",
+      "output": "3"
+    },
+    {
+      "name": "rand_054",
+      "input": "25 91 97\n87 11 32\n43 25 17\n5 86 46\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_055",
+      "input": "10 0 35\n97 75 68\n52 13 60\n96 67 42\n",
+      "output": "1"
+    },
+    {
+      "name": "rand_056",
+      "input": "94 20 76\n55 87 69\n52 71 7\n69 49 62\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_057",
+      "input": "17 91 31\n96 61 26\n43 23 98\n69 79 37\n",
+      "output": "2"
+    },
+    {
+      "name": "rand_058",
+      "input": "49 53 2\n45 89 17\n75 59 85\n46 49 19\n",
+      "output": "1"
+    },
+    {
+      "name": "rand_059",
+      "input": "90 51 5\n66 60 69\n43 9 0\n34 78 26\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_060",
+      "input": "31 88 33\n25 29 27\n97 62 9\n37 0 50\n",
+      "output": "2"
+    },
+    {
+      "name": "rand_061",
+      "input": "61 76 39\n23 82 27\n25 18 0\n28 45 61\n",
+      "output": "1"
+    },
+    {
+      "name": "rand_062",
+      "input": "3 36 55\n30 15 61\n14 84 73\n39 98 16\n",
+      "output": "3"
+    },
+    {
+      "name": "rand_063",
+      "input": "4 42 12\n21 0 91\n37 40 89\n68 4 93\n",
+      "output": "3"
+    },
+    {
+      "name": "rand_064",
+      "input": "33 77 4\n98 86 89\n32 58 44\n56 21 88\n",
+      "output": "1"
+    },
+    {
+      "name": "rand_065",
+      "input": "72 9 48\n17 82 62\n2 96 97\n47 3 59\n",
+      "output": "2"
+    },
+    {
+      "name": "rand_066",
+      "input": "83 92 77\n17 62 1\n2 71 63\n80 46 26\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_067",
+      "input": "83 76 0\n52 84 19\n65 65 100\n25 87 12\n",
+      "output": "2"
+    },
+    {
+      "name": "rand_068",
+      "input": "67 0 88\n60 10 66\n47 77 61\n85 72 76\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_069",
+      "input": "98 82 9\n54 74 23\n16 25 84\n30 83 36\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_070",
+      "input": "26 89 75\n51 62 32\n30 89 6\n60 57 49\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_071",
+      "input": "8 28 51\n28 0 24\n21 94 19\n40 94 88\n",
+      "output": "2"
+    },
+    {
+      "name": "rand_072",
+      "input": "60 20 74\n81 59 28\n60 45 74\n50 15 30\n",
+      "output": "1"
+    },
+    {
+      "name": "rand_073",
+      "input": "9 6 82\n72 78 56\n4 76 71\n8 84 14\n",
+      "output": "3"
+    },
+    {
+      "name": "rand_074",
+      "input": "82 23 100\n82 88 89\n88 26 41\n71 5 38\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_075",
+      "input": "42 6 26\n27 99 55\n93 64 40\n4 54 71\n",
+      "output": "1"
+    },
+    {
+      "name": "rand_076",
+      "input": "26 54 45\n52 93 46\n7 16 35\n2 10 7\n",
+      "output": "1"
+    },
+    {
+      "name": "rand_077",
+      "input": "38 81 38\n8 80 74\n47 66 62\n44 65 4\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_078",
+      "input": "4 57 80\n4 60 42\n23 87 50\n96 76 22\n",
+      "output": "3"
+    },
+    {
+      "name": "rand_079",
+      "input": "19 58 44\n89 61 41\n21 28 52\n51 20 98\n",
+      "output": "3"
+    },
+    {
+      "name": "rand_080",
+      "input": "6 2 93\n82 29 76\n90 59 50\n25 75 47\n",
+      "output": "-1"
+    },
+    {
+      "name": "rand_081",
+      "input": "5 51 62\n92 24 84\n19 50 43\n91 39 34\n",
+      "output": "1"
+    },
+    {
+      "name": "rand_082",
+      "input": "70 71 16\n79 66 23\n53 31 35\n9 41 98\n",
+      "output": "3"
+    },
+    {
+      "name": "rand_083",
+      "input": "96 72 5\n31 46 34\n84 6 79\n89 88 25\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_084",
+      "input": "92 19 97\n59 7 41\n69 71 95\n17 41 16\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_085",
+      "input": "41 84 62\n57 64 91\n43 31 17\n24 46 95\n",
+      "output": "3"
+    },
+    {
+      "name": "rand_086",
+      "input": "69 45 51\n98 18 31\n64 55 38\n55 22 5\n",
+      "output": "1"
+    },
+    {
+      "name": "rand_087",
+      "input": "91 31 70\n35 6 0\n50 57 95\n21 100 52\n",
+      "output": "3"
+    },
+    {
+      "name": "rand_088",
+      "input": "7 38 30\n43 37 53\n33 42 31\n66 53 60\n",
+      "output": "3"
+    },
+    {
+      "name": "rand_089",
+      "input": "16 81 82\n43 10 42\n20 87 84\n3 51 84\n",
+      "output": "2"
+    },
+    {
+      "name": "rand_090",
+      "input": "31 34 33\n38 59 86\n12 32 23\n5 74 37\n",
+      "output": "1"
+    },
+    {
+      "name": "rand_091",
+      "input": "50 79 6\n10 37 5\n83 75 94\n26 75 76\n",
+      "output": "2"
+    },
+    {
+      "name": "rand_092",
+      "input": "73 10 73\n72 27 20\n6 69 31\n19 0 80\n",
+      "output": "-1"
+    },
+    {
+      "name": "rand_093",
+      "input": "35 66 79\n39 42 96\n10 36 35\n19 78 15\n",
+      "output": "1"
+    },
+    {
+      "name": "rand_094",
+      "input": "3 51 48\n20 65 84\n86 48 17\n16 29 26\n",
+      "output": "2"
+    },
+    {
+      "name": "rand_095",
+      "input": "95 29 49\n49 89 18\n35 34 18\n43 91 52\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_096",
+      "input": "57 98 13\n11 28 65\n35 81 89\n6 68 16\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_097",
+      "input": "65 1 54\n0 62 42\n51 75 33\n93 67 31\n",
+      "output": "3"
+    },
+    {
+      "name": "rand_098",
+      "input": "88 29 33\n6 29 56\n66 27 4\n97 12 58\n",
+      "output": "3"
+    },
+    {
+      "name": "rand_099",
+      "input": "27 28 57\n62 91 76\n84 90 68\n89 50 65\n",
+      "output": "1"
+    },
+    {
+      "name": "rand_100",
+      "input": "77 16 17\n11 55 7\n25 95 46\n100 65 54\n",
+      "output": "3"
+    },
+    {
+      "name": "rand_101",
+      "input": "95 72 28\n53 9 6\n80 98 35\n96 67 24\n",
+      "output": "2"
+    },
+    {
+      "name": "rand_102",
+      "input": "73 41 43\n0 86 95\n39 0 93\n92 50 12\n",
+      "output": "1"
+    },
+    {
+      "name": "rand_103",
+      "input": "95 61 2\n0 87 68\n3 74 87\n57 3 1\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_104",
+      "input": "79 38 43\n12 61 67\n59 73 16\n10 21 65\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_105",
+      "input": "13 8 35\n24 69 29\n58 76 74\n64 0 43\n",
+      "output": "2"
+    },
+    {
+      "name": "rand_106",
+      "input": "91 10 69\n48 23 66\n53 39 49\n84 63 24\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_107",
+      "input": "15 35 98\n2 35 47\n89 50 94\n71 57 54\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_108",
+      "input": "80 63 22\n46 24 45\n79 81 56\n97 37 66\n",
+      "output": "3"
+    },
+    {
+      "name": "rand_109",
+      "input": "50 43 39\n74 41 54\n23 70 58\n27 12 75\n",
+      "output": "-1"
+    },
+    {
+      "name": "rand_110",
+      "input": "32 72 5\n1 75 44\n96 26 76\n57 25 14\n",
+      "output": "2"
+    },
+    {
+      "name": "rand_111",
+      "input": "45 14 99\n90 49 25\n44 93 28\n75 78 73\n",
+      "output": "-1"
+    },
+    {
+      "name": "rand_112",
+      "input": "27 89 41\n62 95 18\n20 23 26\n11 33 65\n",
+      "output": "1"
+    },
+    {
+      "name": "rand_113",
+      "input": "50 83 76\n100 51 24\n59 41 82\n0 96 89\n",
+      "output": "-1"
+    },
+    {
+      "name": "rand_114",
+      "input": "38 76 97\n4 5 32\n80 0 12\n0 88 41\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_115",
+      "input": "22 92 57\n43 1 17\n6 95 84\n64 35 10\n",
+      "output": "2"
+    },
+    {
+      "name": "rand_116",
+      "input": "3 96 86\n40 93 44\n63 34 77\n28 89 76\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_117",
+      "input": "54 62 6\n5 56 24\n60 2 22\n5 3 18\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_118",
+      "input": "83 44 71\n8 45 83\n71 73 90\n23 20 2\n",
+      "output": "2"
+    },
+    {
+      "name": "rand_119",
+      "input": "82 73 49\n19 43 60\n61 82 69\n89 94 80\n",
+      "output": "3"
+    },
+    {
+      "name": "rand_120",
+      "input": "9 88 29\n41 54 17\n4 98 45\n25 62 50\n",
+      "output": "2"
+    },
+    {
+      "name": "rand_121",
+      "input": "67 14 20\n4 24 59\n47 71 65\n92 45 53\n",
+      "output": "3"
+    },
+    {
+      "name": "rand_122",
+      "input": "100 30 76\n96 74 62\n25 98 80\n61 66 48\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_123",
+      "input": "92 18 84\n67 69 36\n72 71 74\n66 78 98\n",
+      "output": "3"
+    },
+    {
+      "name": "rand_124",
+      "input": "40 24 14\n97 78 68\n19 11 64\n10 5 64\n",
+      "output": "1"
+    },
+    {
+      "name": "rand_125",
+      "input": "40 81 40\n96 3 24\n36 45 52\n18 77 93\n",
+      "output": "-1"
+    },
+    {
+      "name": "rand_126",
+      "input": "72 70 52\n62 30 56\n13 7 55\n18 65 52\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_127",
+      "input": "89 76 62\n9 12 59\n93 2 100\n72 83 66\n",
+      "output": "2"
+    },
+    {
+      "name": "rand_128",
+      "input": "11 1 77\n21 31 69\n70 45 21\n49 89 89\n",
+      "output": "3"
+    },
+    {
+      "name": "rand_129",
+      "input": "26 42 43\n9 93 32\n43 87 84\n4 61 63\n",
+      "output": "1"
+    },
+    {
+      "name": "rand_130",
+      "input": "62 16 70\n50 81 68\n95 21 33\n8 79 98\n",
+      "output": "3"
+    },
+    {
+      "name": "rand_131",
+      "input": "5 49 5\n34 1 99\n82 92 72\n15 4 18\n",
+      "output": "1"
+    },
+    {
+      "name": "rand_132",
+      "input": "48 96 4\n86 1 27\n12 14 3\n12 80 33\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_133",
+      "input": "13 96 90\n98 4 12\n82 77 80\n76 51 19\n",
+      "output": "-1"
+    },
+    {
+      "name": "rand_134",
+      "input": "67 42 45\n34 3 32\n13 54 59\n14 11 53\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_135",
+      "input": "100 87 87\n87 75 76\n3 48 27\n77 11 28\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_136",
+      "input": "98 17 85\n67 8 3\n14 16 16\n31 5 71\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_137",
+      "input": "58 2 74\n51 21 62\n20 10 91\n48 28 52\n",
+      "output": "-1"
+    },
+    {
+      "name": "rand_138",
+      "input": "87 24 22\n17 55 27\n84 10 96\n18 75 3\n",
+      "output": "2"
+    },
+    {
+      "name": "rand_139",
+      "input": "24 1 45\n84 79 24\n77 84 45\n75 90 96\n",
+      "output": "3"
+    },
+    {
+      "name": "rand_140",
+      "input": "16 11 78\n15 61 16\n73 10 28\n36 6 58\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_141",
+      "input": "61 8 83\n12 94 89\n11 36 54\n89 75 99\n",
+      "output": "3"
+    },
+    {
+      "name": "rand_142",
+      "input": "38 32 85\n26 4 98\n84 89 73\n43 92 79\n",
+      "output": "-1"
+    },
+    {
+      "name": "rand_143",
+      "input": "32 8 12\n46 7 45\n56 65 19\n29 91 25\n",
+      "output": "3"
+    },
+    {
+      "name": "rand_144",
+      "input": "35 76 4\n35 67 81\n97 11 30\n42 50 86\n",
+      "output": "2"
+    },
+    {
+      "name": "rand_145",
+      "input": "39 27 7\n16 19 39\n91 43 98\n59 73 86\n",
+      "output": "2"
+    },
+    {
+      "name": "rand_146",
+      "input": "87 78 87\n45 0 74\n100 21 72\n86 16 52\n",
+      "output": "2"
+    },
+    {
+      "name": "rand_147",
+      "input": "29 16 94\n50 50 96\n66 29 74\n10 14 50\n",
+      "output": "1"
+    },
+    {
+      "name": "rand_148",
+      "input": "6 89 82\n95 85 23\n81 69 20\n99 65 41\n",
+      "output": "3"
+    },
+    {
+      "name": "rand_149",
+      "input": "47 11 88\n83 7 94\n96 63 69\n84 33 78\n",
+      "output": "2"
+    },
+    {
+      "name": "rand_150",
+      "input": "25 29 93\n23 55 22\n61 40 81\n1 46 96\n",
+      "output": "3"
+    },
+    {
+      "name": "rand_151",
+      "input": "54 3 7\n3 66 41\n84 74 70\n82 54 85\n",
+      "output": "3"
+    },
+    {
+      "name": "rand_152",
+      "input": "45 47 28\n53 6 84\n43 33 69\n92 48 28\n",
+      "output": "3"
+    },
+    {
+      "name": "rand_153",
+      "input": "88 30 79\n85 27 7\n6 19 9\n71 77 74\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_154",
+      "input": "51 100 96\n69 27 28\n53 14 55\n76 94 79\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_155",
+      "input": "16 13 82\n31 17 30\n23 87 9\n18 32 22\n",
+      "output": "2"
+    },
+    {
+      "name": "rand_156",
+      "input": "44 58 18\n71 27 23\n41 33 81\n20 17 98\n",
+      "output": "3"
+    },
+    {
+      "name": "rand_157",
+      "input": "23 48 54\n8 42 11\n5 56 69\n51 25 97\n",
+      "output": "3"
+    },
+    {
+      "name": "rand_158",
+      "input": "26 34 52\n40 87 77\n98 71 71\n10 46 16\n",
+      "output": "2"
+    },
+    {
+      "name": "rand_159",
+      "input": "100 61 90\n32 24 19\n75 77 60\n83 37 77\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_160",
+      "input": "12 85 2\n58 20 36\n9 13 33\n45 64 3\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_161",
+      "input": "76 40 86\n29 10 25\n74 0 3\n89 85 76\n",
+      "output": "3"
+    },
+    {
+      "name": "rand_162",
+      "input": "46 87 85\n83 28 9\n87 91 93\n22 55 74\n",
+      "output": "2"
+    },
+    {
+      "name": "rand_163",
+      "input": "83 3 14\n28 61 86\n58 39 33\n12 39 29\n",
+      "output": "1"
+    },
+    {
+      "name": "rand_164",
+      "input": "90 27 39\n35 13 45\n71 99 3\n94 53 50\n",
+      "output": "2"
+    },
+    {
+      "name": "rand_165",
+      "input": "67 45 22\n7 37 49\n4 66 56\n50 27 43\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_166",
+      "input": "9 44 2\n94 62 6\n68 97 5\n45 15 39\n",
+      "output": "2"
+    },
+    {
+      "name": "rand_167",
+      "input": "80 82 76\n12 63 71\n68 77 83\n100 14 77\n",
+      "output": "3"
+    },
+    {
+      "name": "rand_168",
+      "input": "84 100 40\n42 89 27\n23 44 82\n1 95 56\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_169",
+      "input": "68 37 69\n59 57 95\n3 42 90\n13 64 9\n",
+      "output": "1"
+    },
+    {
+      "name": "rand_170",
+      "input": "84 58 53\n12 22 75\n14 76 82\n31 72 71\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_171",
+      "input": "18 1 9\n26 73 67\n62 86 56\n52 100 81\n",
+      "output": "3"
+    },
+    {
+      "name": "rand_172",
+      "input": "34 12 30\n60 25 83\n15 34 77\n77 61 68\n",
+      "output": "1"
+    },
+    {
+      "name": "rand_173",
+      "input": "74 62 28\n31 53 48\n81 9 92\n13 84 10\n",
+      "output": "2"
+    },
+    {
+      "name": "rand_174",
+      "input": "67 4 41\n2 77 3\n88 65 24\n30 74 49\n",
+      "output": "2"
+    },
+    {
+      "name": "rand_175",
+      "input": "58 28 44\n73 3 95\n69 88 9\n70 80 75\n",
+      "output": "1"
+    },
+    {
+      "name": "rand_176",
+      "input": "56 78 75\n0 47 29\n18 68 40\n22 72 67\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_177",
+      "input": "89 45 54\n2 85 77\n70 85 3\n8 64 71\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_178",
+      "input": "90 77 4\n0 89 59\n52 72 29\n58 42 27\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_179",
+      "input": "23 87 96\n16 71 85\n47 44 1\n48 71 1\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_180",
+      "input": "91 93 29\n11 20 5\n31 48 2\n79 46 93\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_181",
+      "input": "61 8 11\n37 2 11\n25 64 55\n61 71 54\n",
+      "output": "3"
+    },
+    {
+      "name": "rand_182",
+      "input": "23 23 21\n31 78 9\n23 0 49\n52 24 79\n",
+      "output": "3"
+    },
+    {
+      "name": "rand_183",
+      "input": "65 7 80\n57 10 51\n4 85 16\n94 95 53\n",
+      "output": "3"
+    },
+    {
+      "name": "rand_184",
+      "input": "1 4 98\n22 69 18\n68 4 21\n3 61 29\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_185",
+      "input": "97 84 45\n41 1 17\n82 37 39\n32 5 26\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_186",
+      "input": "70 5 9\n98 87 6\n27 19 46\n37 66 95\n",
+      "output": "1"
+    },
+    {
+      "name": "rand_187",
+      "input": "91 76 47\n40 8 14\n65 71 14\n53 93 66\n",
+      "output": "3"
+    },
+    {
+      "name": "rand_188",
+      "input": "96 27 78\n14 24 99\n96 63 29\n20 63 28\n",
+      "output": "1"
+    },
+    {
+      "name": "rand_189",
+      "input": "24 9 11\n35 37 2\n31 67 52\n64 11 95\n",
+      "output": "3"
+    },
+    {
+      "name": "rand_190",
+      "input": "39 18 70\n95 21 87\n89 57 88\n0 93 74\n",
+      "output": "1"
+    },
+    {
+      "name": "rand_191",
+      "input": "83 70 93\n96 28 82\n90 24 39\n67 9 95\n",
+      "output": "1"
+    },
+    {
+      "name": "rand_192",
+      "input": "97 91 47\n80 87 19\n28 27 86\n89 27 47\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_193",
+      "input": "56 82 56\n13 97 3\n98 0 15\n75 94 84\n",
+      "output": "2"
+    },
+    {
+      "name": "rand_194",
+      "input": "86 62 36\n28 23 35\n17 98 41\n55 22 67\n",
+      "output": "2"
+    },
+    {
+      "name": "rand_195",
+      "input": "5 20 26\n8 25 59\n11 64 41\n51 17 36\n",
+      "output": "2"
+    },
+    {
+      "name": "rand_196",
+      "input": "22 0 35\n91 7 13\n74 37 45\n62 16 33\n",
+      "output": "1"
+    },
+    {
+      "name": "rand_197",
+      "input": "15 99 29\n6 39 67\n99 44 69\n95 29 81\n",
+      "output": "0"
+    },
+    {
+      "name": "rand_198",
+      "input": "31 89 86\n23 33 80\n37 92 39\n40 7 67\n",
+      "output": "2"
+    },
+    {
+      "name": "rand_199",
+      "input": "99 78 91\n49 5 11\n34 21 59\n76 32 41\n",
+      "output": "0"
+    },
+    {
+      "name": "tie_construct_000",
+      "input": "25 19 2\n32 5 9\n28 6 12\n98 29 11\n",
+      "output": "3"
+    },
+    {
+      "name": "tie_construct_001",
+      "input": "52 21 43\n39 93 35\n52 39 25\n41 46 79\n",
+      "output": "1"
+    },
+    {
+      "name": "tie_construct_002",
+      "input": "21 28 40\n20 56 13\n26 38 25\n81 16 96\n",
+      "output": "3"
+    },
+    {
+      "name": "tie_construct_003",
+      "input": "10 32 12\n34 16 4\n7 30 96\n81 93 45\n",
+      "output": "2"
+    },
+    {
+      "name": "tie_construct_004",
+      "input": "71 81 28\n45 91 44\n85 25 98\n62 41 60\n",
+      "output": "2"
+    },
+    {
+      "name": "tie_construct_005",
+      "input": "34 82 91\n84 31 92\n26 87 94\n99 44 57\n",
+      "output": "-1"
+    },
+    {
+      "name": "tie_construct_006",
+      "input": "9 7 8\n3 98 10\n3 10 11\n86 48 8\n",
+      "output": "1"
+    },
+    {
+      "name": "tie_construct_007",
+      "input": "53 95 54\n72 77 94\n74 73 55\n13 60 38\n",
+      "output": "0"
+    },
+    {
+      "name": "tie_construct_008",
+      "input": "43 61 98\n93 44 65\n98 16 99\n33 92 60\n",
+      "output": "2"
+    },
+    {
+      "name": "tie_construct_009",
+      "input": "2 94 41\n2 45 3\n31 0 19\n91 39 38\n",
+      "output": "0"
+    },
+    {
+      "name": "tie_construct_010",
+      "input": "94 100 30\n18 36 87\n44 37 60\n40 18 9\n",
+      "output": "0"
+    },
+    {
+      "name": "tie_construct_011",
+      "input": "96 45 88\n80 49 100\n67 97 65\n100 34 60\n",
+      "output": "1"
+    },
+    {
+      "name": "tie_construct_012",
+      "input": "51 14 65\n38 32 60\n93 88 30\n75 42 67\n",
+      "output": "2"
+    },
+    {
+      "name": "tie_construct_013",
+      "input": "91 95 15\n43 30 75\n25 97 26\n39 44 67\n",
+      "output": "2"
+    },
+    {
+      "name": "tie_construct_014",
+      "input": "62 74 74\n91 34 85\n41 75 94\n53 95 59\n",
+      "output": "-1"
+    },
+    {
+      "name": "tie_construct_015",
+      "input": "48 97 2\n95 40 13\n9 87 52\n66 27 53\n",
+      "output": "0"
+    },
+    {
+      "name": "tie_construct_016",
+      "input": "57 84 7\n95 75 12\n73 6 69\n79 29 15\n",
+      "output": "1"
+    },
+    {
+      "name": "tie_construct_017",
+      "input": "1 25 99\n0 22 17\n21 3 15\n85 97 92\n",
+      "output": "0"
+    },
+    {
+      "name": "tie_construct_018",
+      "input": "81 100 31\n39 11 90\n77 23 40\n40 58 44\n",
+      "output": "0"
+    },
+    {
+      "name": "tie_construct_019",
+      "input": "39 55 91\n17 60 22\n20 52 27\n5 57 96\n",
+      "output": "3"
+    },
+    {
+      "name": "tie_construct_020",
+      "input": "100 100 86\n88 100 98\n91 100 95\n100 6 70\n",
+      "output": "0"
+    },
+    {
+      "name": "tie_construct_021",
+      "input": "8 44 57\n45 19 45\n97 51 18\n32 13 64\n",
+      "output": "2"
+    },
+    {
+      "name": "tie_construct_022",
+      "input": "97 98 97\n93 96 99\n100 99 93\n10 3 63\n",
+      "output": "2"
+    },
+    {
+      "name": "tie_construct_023",
+      "input": "100 59 88\n86 77 69\n94 47 91\n2 88 43\n",
+      "output": "0"
+    },
+    {
+      "name": "tie_construct_024",
+      "input": "1 5 0\n6 0 0\n0 4 2\n94 54 50\n",
+      "output": "3"
+    },
+    {
+      "name": "tie_construct_025",
+      "input": "14 56 48\n87 2 29\n29 74 15\n43 93 32\n",
+      "output": "3"
+    },
+    {
+      "name": "tie_construct_026",
+      "input": "5 46 98\n43 5 6\n39 0 15\n64 85 43\n",
+      "output": "0"
+    },
+    {
+      "name": "tie_construct_027",
+      "input": "7 87 26\n35 65 20\n20 93 5\n16 18 76\n",
+      "output": "2"
+    },
+    {
+      "name": "tie_construct_028",
+      "input": "48 25 95\n81 5 1\n1 78 8\n77 10 64\n",
+      "output": "0"
+    },
+    {
+      "name": "tie_construct_029",
+      "input": "95 100 92\n98 98 91\n91 97 96\n14 17 76\n",
+      "output": "0"
+    },
+    {
+      "name": "tie_construct_030",
+      "input": "87 96 70\n59 94 98\n95 99 59\n85 33 25\n",
+      "output": "2"
+    },
+    {
+      "name": "tie_construct_031",
+      "input": "39 17 95\n62 41 48\n26 77 48\n71 36 95\n",
+      "output": "0"
+    },
+    {
+      "name": "tie_construct_032",
+      "input": "32 21 8\n17 99 19\n30 5 26\n41 97 89\n",
+      "output": "1"
+    },
+    {
+      "name": "tie_construct_033",
+      "input": "23 72 0\n41 22 32\n17 70 8\n70 95 16\n",
+      "output": "3"
+    },
+    {
+      "name": "tie_construct_034",
+      "input": "27 47 63\n23 82 32\n77 36 91\n24 97 5\n",
+      "output": "-1"
+    },
+    {
+      "name": "tie_construct_035",
+      "input": "78 87 97\n69 87 75\n89 99 43\n27 99 28\n",
+      "output": "2"
+    },
+    {
+      "name": "tie_construct_036",
+      "input": "95 11 95\n67 9 99\n93 4 78\n14 39 67\n",
+      "output": "1"
+    },
+    {
+      "name": "tie_construct_037",
+      "input": "72 93 26\n20 76 25\n88 22 11\n0 87 47\n",
+      "output": "0"
+    },
+    {
+      "name": "tie_construct_038",
+      "input": "8 0 39\n1 93 22\n2 13 32\n67 96 20\n",
+      "output": "3"
+    },
+    {
+      "name": "tie_construct_039",
+      "input": "45 68 68\n81 86 14\n4 91 100\n39 50 33\n",
+      "output": "2"
+    },
+    {
+      "name": "tie_construct_040",
+      "input": "33 98 92\n59 84 58\n93 11 97\n0 52 48\n",
+      "output": "0"
+    },
+    {
+      "name": "tie_construct_041",
+      "input": "96 97 94\n91 94 93\n95 95 97\n5 69 68\n",
+      "output": "0"
+    },
+    {
+      "name": "tie_construct_042",
+      "input": "82 39 71\n26 84 82\n91 93 58\n0 94 4\n",
+      "output": "-1"
+    },
+    {
+      "name": "tie_construct_043",
+      "input": "7 4 11\n14 8 100\n3 16 3\n14 0 63\n",
+      "output": "1"
+    },
+    {
+      "name": "tie_construct_044",
+      "input": "83 82 88\n92 99 62\n99 74 80\n96 43 90\n",
+      "output": "1"
+    },
+    {
+      "name": "tie_construct_045",
+      "input": "67 18 0\n15 91 26\n13 67 5\n67 30 0\n",
+      "output": "1"
+    },
+    {
+      "name": "tie_construct_046",
+      "input": "95 88 100\n97 95 93\n96 97 90\n26 88 100\n",
+      "output": "0"
+    },
+    {
+      "name": "tie_construct_047",
+      "input": "61 5 14\n92 3 54\n52 15 13\n54 31 67\n",
+      "output": "1"
+    },
+    {
+      "name": "tie_construct_048",
+      "input": "35 90 100\n90 87 48\n40 85 100\n92 94 10\n",
+      "output": "0"
+    },
+    {
+      "name": "tie_construct_049",
+      "input": "36 3 30\n16 27 26\n26 37 6\n76 98 93\n",
+      "output": "3"
+    },
+    {
+      "name": "tie_construct_050",
+      "input": "1 11 1\n1 2 10\n94 11 2\n55 72 100\n",
+      "output": "3"
+    },
+    {
+      "name": "tie_construct_051",
+      "input": "99 85 91\n83 100 89\n97 82 93\n71 77 31\n",
+      "output": "1"
+    },
+    {
+      "name": "tie_construct_052",
+      "input": "91 79 98\n89 91 99\n87 100 81\n70 61 56\n",
+      "output": "2"
+    },
+    {
+      "name": "tie_construct_053",
+      "input": "96 13 7\n4 5 15\n6 4 14\n53 51 3\n",
+      "output": "0"
+    },
+    {
+      "name": "tie_construct_054",
+      "input": "86 47 34\n36 33 98\n66 59 42\n99 93 73\n",
+      "output": "3"
+    },
+    {
+      "name": "tie_construct_055",
+      "input": "25 93 24\n3 17 34\n25 27 2\n59 60 60\n",
+      "output": "0"
+    },
+    {
+      "name": "tie_construct_056",
+      "input": "21 59 18\n18 11 69\n5 80 13\n99 19 46\n",
+      "output": "3"
+    },
+    {
+      "name": "tie_construct_057",
+      "input": "6 7 8\n19 1 95\n2 9 10\n6 90 89\n",
+      "output": "1"
+    },
+    {
+      "name": "tie_construct_058",
+      "input": "64 29 50\n93 5 45\n24 23 93\n33 7 85\n",
+      "output": "1"
+    },
+    {
+      "name": "tie_construct_059",
+      "input": "8 96 12\n7 10 9\n4 13 9\n49 43 34\n",
+      "output": "0"
+    }
+  ]
+}

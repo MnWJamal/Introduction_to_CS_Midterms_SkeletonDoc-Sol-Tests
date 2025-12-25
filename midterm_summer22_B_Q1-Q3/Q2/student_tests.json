@@ -1,0 +1,104 @@
+{
+  "tests": [
+    {
+      "name": "q2_n0_empty_array",
+      "input": "0\n",
+      "output": "\n"
+    },
+
+    {
+      "name": "q2_n1_a",
+      "input": "1\na\n",
+      "output": "a\n"
+    },
+    {
+      "name": "q2_n1_z",
+      "input": "1\nz\n",
+      "output": "z\n"
+    },
+
+    {
+      "name": "q2_n2_already_sorted",
+      "input": "2\na b\n",
+      "output": "a b\n"
+    },
+    {
+      "name": "q2_n2_reverse",
+      "input": "2\nb a\n",
+      "output": "a b\n"
+    },
+    {
+      "name": "q2_n2_same",
+      "input": "2\nc c\n",
+      "output": "c c\n"
+    },
+
+    {
+      "name": "q2_n3_compact_no_spaces_cba",
+      "input": "3\ncba\n",
+      "output": "a b c\n"
+    },
+    {
+      "name": "q2_n3_with_newlines",
+      "input": "3\nz\na\nm\n",
+      "output": "a m z\n"
+    },
+
+    {
+      "name": "q2_duplicates_extremes_4",
+      "input": "4\nz a z a\n",
+      "output": "a a z z\n"
+    },
+    {
+      "name": "q2_many_duplicates_6",
+      "input": "6\nb a b a b a\n",
+      "output": "a a a b b b\n"
+    },
+
+    {
+      "name": "q2_hello_5",
+      "input": "5\nh e l l o\n",
+      "output": "e h l l o\n"
+    },
+    {
+      "name": "q2_reverse_block_5",
+      "input": "5\nz y x w v\n",
+      "output": "v w x y z\n"
+    },
+
+    {
+      "name": "q2_all_same_10",
+      "input": "10\nk k k k k k k k k k\n",
+      "output": "k k k k k k k k k k\n"
+    },
+
+    {
+      "name": "q2_mixed_word_manage_6",
+      "input": "6\nm a n a g e\n",
+      "output": "a a e g m n\n"
+    },
+
+    {
+      "name": "q2_edges_a_to_z_2",
+      "input": "2\nz a\n",
+      "output": "a z\n"
+    },
+    {
+      "name": "q2_edges_a_to_z_3",
+      "input": "3\nz z a\n",
+      "output": "a z z\n"
+    },
+
+    {
+      "name": "q2_all_letters_26_descending",
+      "input": "26\nz y x w v u t s r q p o n m l k j i h g f e d c b a\n",
+      "output": "a b c d e f g h i j k l m n o p q r s t u v w x y z\n"
+    },
+
+    {
+      "name": "q2_nearly_sorted_single_inversion",
+      "input": "8\na b c d f e g h\n",
+      "output": "a b c d e f g h\n"
+    }
+  ]
+}
