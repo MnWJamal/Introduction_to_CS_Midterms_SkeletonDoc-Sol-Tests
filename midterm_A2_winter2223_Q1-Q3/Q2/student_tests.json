@@ -1,0 +1,144 @@
+{
+  "tests": [
+    {
+      "name": "example a b c e e",
+      "input": "5\na b c e e\n",
+      "output": "1"
+    },
+    {
+      "name": "edge n=0 empty",
+      "input": "0\n",
+      "output": "0"
+    },
+    {
+      "name": "edge n=1 a",
+      "input": "1\na\n",
+      "output": "1"
+    },
+    {
+      "name": "edge n=1 z",
+      "input": "1\nz\n",
+      "output": "1"
+    },
+    {
+      "name": "n=2 increasing a b",
+      "input": "2\na b\n",
+      "output": "0"
+    },
+    {
+      "name": "n=2 decreasing b a",
+      "input": "2\nb a\n",
+      "output": "2"
+    },
+    {
+      "name": "n=3 increasing a b c",
+      "input": "3\na b c\n",
+      "output": "1"
+    },
+    {
+      "name": "n=3 decreasing c b a",
+      "input": "3\nc b a\n",
+      "output": "3"
+    },
+    {
+      "name": "all same aaaaa",
+      "input": "5\na a a a a\n",
+      "output": "5"
+    },
+    {
+      "name": "all same zzz",
+      "input": "3\nz z z\n",
+      "output": "3"
+    },
+    {
+      "name": "strict inc length 5 abcde",
+      "input": "5\na b c d e\n",
+      "output": "1"
+    },
+    {
+      "name": "strict inc length 4 abcd",
+      "input": "4\na b c d\n",
+      "output": "0"
+    },
+    {
+      "name": "strict dec length 5 edcba",
+      "input": "5\ne d c b a\n",
+      "output": "5"
+    },
+    {
+      "name": "with duplicates a b a b a",
+      "input": "5\na b a b a\n",
+      "output": "1"
+    },
+    {
+      "name": "with duplicates b a c a",
+      "input": "4\nb a c a\n",
+      "output": "1"
+    },
+    {
+      "name": "with duplicates a c b c a",
+      "input": "5\na c b c a\n",
+      "output": "2"
+    },
+    {
+      "name": "extremes a z a z",
+      "input": "4\na z a z\n",
+      "output": "0"
+    },
+    {
+      "name": "extremes z a z a",
+      "input": "4\nz a z a\n",
+      "output": "2"
+    },
+    {
+      "name": "mixed a a b b c c",
+      "input": "6\na a b b c c\n",
+      "output": "2"
+    },
+    {
+      "name": "mixed c c b b a a",
+      "input": "6\nc c b b a a\n",
+      "output": "6"
+    },
+    {
+      "name": "palindrome a b c b a",
+      "input": "5\na b c b a\n",
+      "output": "2"
+    },
+    {
+      "name": "random b d a c c",
+      "input": "5\nb d a c c\n",
+      "output": "0"
+    },
+    {
+      "name": "random m i d t e r m",
+      "input": "7\nm i d t e r m\n",
+      "output": "0"
+    },
+    {
+      "name": "alphabet inc 26",
+      "input": "26\nabcdefghijklmnopqrstuvwxyz\n",
+      "output": "0"
+    },
+    {
+      "name": "alphabet dec 26",
+      "input": "26\nzyxwvutsrqponmlkjihgfedcba\n",
+      "output": "26"
+    },
+    {
+      "name": "many duplicates a z z z a",
+      "input": "5\na z z z a\n",
+      "output": "1"
+    },
+    {
+      "name": "many duplicates a z a a a",
+      "input": "5\na z a a a\n",
+      "output": "3"
+    },
+    {
+      "name": "format: weird spaces or newlines for a b c e e",
+      "input": "5\na   b\nc\ne   e\n",
+      "output": "1"
+    }
+  ]
+}
