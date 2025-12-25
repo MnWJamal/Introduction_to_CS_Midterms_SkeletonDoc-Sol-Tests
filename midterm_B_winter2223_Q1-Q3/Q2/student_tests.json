@@ -1,0 +1,139 @@
+{
+  "tests": [
+    {
+      "name": "example_hello_true",
+      "input": "9\ne l o h f f ! h l\n6\nh e l l o !\n",
+      "output": "1"
+    },
+    {
+      "name": "missing_exclamation_false",
+      "input": "9\ne l o h f f h l l\n6\nh e l l o !\n",
+      "output": "0"
+    },
+    {
+      "name": "key_duplicates_true",
+      "input": "3 a b c 6 a a b b c c\n",
+      "output": "1"
+    },
+    {
+      "name": "missing_one_char_false",
+      "input": "6 a a b b c c 4 a b c d\n",
+      "output": "0"
+    },
+    {
+      "name": "empty_key_true",
+      "input": "3 x y z 0 \n",
+      "output": "1"
+    },
+    {
+      "name": "empty_arr_empty_key_true",
+      "input": "0\n\n0\n\n",
+      "output": "1"
+    },
+    {
+      "name": "empty_arr_nonempty_key_false",
+      "input": "0\n\n1\na\n",
+      "output": "0"
+    },
+    {
+      "name": "single_char_present_true",
+      "input": "1\nz\n1\nz\n",
+      "output": "1"
+    },
+    {
+      "name": "single_char_absent_false",
+      "input": "1\nz\n1\ny\n",
+      "output": "0"
+    },
+    {
+      "name": "case_sensitive_false",
+      "input": "3 A b c 1 a\n",
+      "output": "0"
+    },
+    {
+      "name": "case_sensitive_true",
+      "input": "2 A a 2 A a\n",
+      "output": "1"
+    },
+    {
+      "name": "digits_punct_true",
+      "input": "4\n0\n1\n#\n?\n3\n#\n1\n0\n",
+      "output": "1"
+    },
+    {
+      "name": "digits_punct_false",
+      "input": "4\n0\n1\n#\n?\n4\n#\n1\n0\n$\n",
+      "output": "0"
+    },
+    {
+      "name": "key_repeated_and_missing_false",
+      "input": "4\na b c a\n4\na a a d\n",
+      "output": "0"
+    },
+    {
+      "name": "special_char_true",
+      "input": "3\na @ b\n1\n@\n",
+      "output": "1"
+    },
+    {
+      "name": "special_char_false",
+      "input": "3\na # b\n1\n@\n",
+      "output": "0"
+    },
+    {
+      "name": "large_all_a_plus_5_true",
+      "input": "1000 a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a b c d e f 2 a f\n",
+      "output": "1"
+    },
+    {
+      "name": "large_missing_z_false",
+      "input": "1000 a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a b c d e f 2 a z\n",
+      "output": "0"
+    },
+    {
+      "name": "multi_type_true",
+      "input": "39 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 ! @ # 5 a z 0 ! #\n",
+      "output": "1"
+    },
+    {
+      "name": "multi_type_false",
+      "input": "39 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 ! @ # 6 a z 0 ! # %\n",
+      "output": "0"
+    },
+    {
+      "name": "key_longer_duplicates_true",
+      "input": "2\na b\n10\na a a a a b b b b b\n",
+      "output": "1"
+    },
+    {
+      "name": "scattered_true",
+      "input": "16\nt h e q u i c k b r o w n f o x\n3\nb o x\n",
+      "output": "1"
+    },
+    {
+      "name": "scattered_false",
+      "input": "15\nt h e q u i c k b r o w n f x\n3\nb o x\n",
+      "output": "1"
+    },
+    {
+      "name": "all_same_char_true",
+      "input": "10\nx x x x x x x x x x\n3\nx x x\n",
+      "output": "1"
+    },
+    {
+      "name": "all_same_char_false",
+      "input": "10\nx x x x x x x x x x\n1\ny\n",
+      "output": "0"
+    },
+    {
+      "name": "compact_input_true",
+      "input": "4 abcd\n2 bd\n",
+      "output": "1"
+    },
+    {
+      "name": "compact_input_false",
+      "input": "4 abcd\n3 bde\n",
+      "output": "0"
+    }
+  ]
+}

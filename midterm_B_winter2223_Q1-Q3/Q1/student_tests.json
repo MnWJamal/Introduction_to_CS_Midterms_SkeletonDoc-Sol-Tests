@@ -1,0 +1,219 @@
+{
+  "tests": [
+    {
+      "name": "single_digit_0",
+      "input": "0\n",
+      "output": "1"
+    },
+    {
+      "name": "single_digit_1",
+      "input": "1\n",
+      "output": "1"
+    },
+    {
+      "name": "single_digit_2",
+      "input": "2\n",
+      "output": "1"
+    },
+    {
+      "name": "single_digit_3",
+      "input": "3\n",
+      "output": "1"
+    },
+    {
+      "name": "single_digit_4",
+      "input": "4\n",
+      "output": "1"
+    },
+    {
+      "name": "single_digit_5",
+      "input": "5\n",
+      "output": "1"
+    },
+    {
+      "name": "single_digit_6",
+      "input": "6\n",
+      "output": "1"
+    },
+    {
+      "name": "single_digit_7",
+      "input": "7\n",
+      "output": "1"
+    },
+    {
+      "name": "single_digit_8",
+      "input": "8\n",
+      "output": "1"
+    },
+    {
+      "name": "single_digit_9",
+      "input": "9\n",
+      "output": "1"
+    },
+    {
+      "name": "two_digit_10",
+      "input": "10\n",
+      "output": "0"
+    },
+    {
+      "name": "two_digit_11",
+      "input": "11\n",
+      "output": "0"
+    },
+    {
+      "name": "two_digit_12",
+      "input": "12\n",
+      "output": "1"
+    },
+    {
+      "name": "two_digit_19",
+      "input": "19\n",
+      "output": "1"
+    },
+    {
+      "name": "two_digit_20",
+      "input": "20\n",
+      "output": "0"
+    },
+    {
+      "name": "two_digit_21",
+      "input": "21\n",
+      "output": "0"
+    },
+    {
+      "name": "two_digit_29",
+      "input": "29\n",
+      "output": "1"
+    },
+    {
+      "name": "two_digit_68",
+      "input": "68\n",
+      "output": "1"
+    },
+    {
+      "name": "two_digit_54",
+      "input": "54\n",
+      "output": "0"
+    },
+    {
+      "name": "two_digit_90",
+      "input": "90\n",
+      "output": "0"
+    },
+    {
+      "name": "two_digit_98",
+      "input": "98\n",
+      "output": "0"
+    },
+    {
+      "name": "two_digit_89",
+      "input": "89\n",
+      "output": "1"
+    },
+    {
+      "name": "example_456",
+      "input": "456\n",
+      "output": "1"
+    },
+    {
+      "name": "example_159",
+      "input": "159\n",
+      "output": "1"
+    },
+    {
+      "name": "example_13679",
+      "input": "13679\n",
+      "output": "1"
+    },
+    {
+      "name": "example_4560",
+      "input": "4560\n",
+      "output": "0"
+    },
+    {
+      "name": "example_613",
+      "input": "613\n",
+      "output": "0"
+    },
+    {
+      "name": "example_44444",
+      "input": "44444\n",
+      "output": "0"
+    },
+    {
+      "name": "example_99",
+      "input": "99\n",
+      "output": "0"
+    },
+    {
+      "name": "example_97531",
+      "input": "97531\n",
+      "output": "0"
+    },
+    {
+      "name": "tricky_1123",
+      "input": "1123\n",
+      "output": "0"
+    },
+    {
+      "name": "tricky_1223",
+      "input": "1223\n",
+      "output": "0"
+    },
+    {
+      "name": "tricky_1203",
+      "input": "1203\n",
+      "output": "0"
+    },
+    {
+      "name": "tricky_123",
+      "input": "123\n",
+      "output": "1"
+    },
+    {
+      "name": "tricky_132",
+      "input": "132\n",
+      "output": "0"
+    },
+    {
+      "name": "tricky_123456789",
+      "input": "123456789\n",
+      "output": "1"
+    },
+    {
+      "name": "tricky_123456788",
+      "input": "123456788\n",
+      "output": "0"
+    },
+    {
+      "name": "tricky_23456789",
+      "input": "23456789\n",
+      "output": "1"
+    },
+    {
+      "name": "tricky_1234567890",
+      "input": "1234567890\n",
+      "output": "0"
+    },
+    {
+      "name": "tricky_1023456789",
+      "input": "1023456789\n",
+      "output": "0"
+    },
+    {
+      "name": "tricky_2147483647",
+      "input": "2147483647\n",
+      "output": "0"
+    },
+    {
+      "name": "spaces_before_after_12",
+      "input": "   12   \n",
+      "output": "1"
+    },
+    {
+      "name": "newline_before_68",
+      "input": "\n68\n",
+      "output": "1"
+    }
+  ]
+}
