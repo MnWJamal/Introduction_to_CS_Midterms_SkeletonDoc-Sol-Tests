@@ -1,0 +1,64 @@
+{
+  "tests": [
+    {
+      "name": "q3_pdf_example_two_valid_outputs",
+      "input": "5\n8 3 . 3 2\n2 3 . 3 2\n8 3 . 3 8\n",
+      "output": "1"
+    },
+    {
+      "name": "q3_center_char_not_dot_unique_fix",
+      "input": "7\n1 2 3 ! 3 2 1\n1 2 3 . 3 2 1\n1 2 3 . 3 2 1\n",
+      "output": "1"
+    },
+    {
+      "name": "q3_mismatch_inner_pair_two_fixes",
+      "input": "7\n1 9 4 . 7 9 1\n1 9 4 . 4 9 1\n1 9 7 . 7 9 1\n",
+      "output": "1"
+    },
+    {
+      "name": "q3_non_digit_on_left_unique_fix",
+      "input": "11\n3 @ 5 7 9 . 9 7 5 2 3\n3 2 5 7 9 . 9 7 5 2 3\n3 2 5 7 9 . 9 7 5 2 3\n",
+      "output": "1"
+    },
+    {
+      "name": "q3_non_digit_on_right_unique_fix",
+      "input": "11\n4 2 0 1 3 . 3 1 0 = 4\n4 2 0 1 3 . 3 1 0 2 4\n4 2 0 1 3 . 3 1 0 2 4\n",
+      "output": "1"
+    },
+    {
+      "name": "q3_center_digit_to_dot_unique_fix",
+      "input": "9\n1 2 3 4 5 4 3 2 1\n1 2 3 4 . 4 3 2 1\n1 2 3 4 . 4 3 2 1\n",
+      "output": "1"
+    },
+    {
+      "name": "q3_extra_dot_in_digits_unique_fix",
+      "input": "5\n4 . . 4 4\n4 4 . 4 4\n4 4 . 4 4\n",
+      "output": "1"
+    },
+    {
+      "name": "q3_n3_mismatch_two_fixes",
+      "input": "3\n9 . 1\n1 . 1\n9 . 9\n",
+      "output": "1"
+    },
+    {
+      "name": "q3_n3_center_to_dot_unique_fix",
+      "input": "3\n5 5 5\n5 . 5\n5 . 5\n",
+      "output": "1"
+    },
+    {
+      "name": "q3_ends_mismatch_two_fixes",
+      "input": "7\n7 0 0 . 0 0 8\n8 0 0 . 0 0 8\n7 0 0 . 0 0 7\n",
+      "output": "1"
+    },
+    {
+      "name": "q3_letter_on_right_unique_fix",
+      "input": "11\n8 8 8 8 8 . 8 8 8 a 8\n8 8 8 8 8 . 8 8 8 8 8\n8 8 8 8 8 . 8 8 8 8 8\n",
+      "output": "1"
+    },
+    {
+      "name": "q3_mismatch_near_center_two_fixes",
+      "input": "7\n2 4 1 . 6 4 2\n2 4 6 . 6 4 2\n2 4 1 . 1 4 2\n",
+      "output": "1"
+    }
+  ]
+}

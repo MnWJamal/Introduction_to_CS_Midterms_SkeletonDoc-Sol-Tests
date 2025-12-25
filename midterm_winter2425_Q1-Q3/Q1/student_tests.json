@@ -1,0 +1,249 @@
+{
+  "tests": [
+    {
+      "name": "q1_empty_EOF_immediately",
+      "input": "",
+      "output": "0\n"
+    },
+    {
+      "name": "q1_one_char_A",
+      "input": "A",
+      "output": "65\n"
+    },
+    {
+      "name": "q1_one_char_z",
+      "input": "z",
+      "output": "122\n"
+    },
+    {
+      "name": "q1_one_char_digit0",
+      "input": "0",
+      "output": "48\n"
+    },
+    {
+      "name": "q1_one_char_digit9",
+      "input": "9",
+      "output": "57\n"
+    },
+    {
+      "name": "q1_one_char_plus",
+      "input": "+",
+      "output": "43\n"
+    },
+    {
+      "name": "q1_one_char_minus",
+      "input": "-",
+      "output": "45\n"
+    },
+    {
+      "name": "q1_one_char_bang",
+      "input": "!",
+      "output": "33\n"
+    },
+    {
+      "name": "q1_two_chars_Ab",
+      "input": "Ab",
+      "output": "163\n"
+    },
+    {
+      "name": "q1_two_chars_AZ",
+      "input": "AZ",
+      "output": "155\n"
+    },
+    {
+      "name": "q1_two_chars_az",
+      "input": "az",
+      "output": "219\n"
+    },
+    {
+      "name": "q1_two_chars_plus_minus",
+      "input": "+-",
+      "output": "88\n"
+    },
+    {
+      "name": "q1_two_chars_minus_plus",
+      "input": "-+",
+      "output": "88\n"
+    },
+    {
+      "name": "q1_two_chars_bang_plus",
+      "input": "!+",
+      "output": "76\n"
+    },
+    {
+      "name": "q1_two_chars_bang_minus",
+      "input": "!-",
+      "output": "78\n"
+    },
+    {
+      "name": "q1_two_chars_digit_bang",
+      "input": "9!",
+      "output": "90\n"
+    },
+    {
+      "name": "q1_three_chars_Ab!",
+      "input": "Ab!",
+      "output": "196\n"
+    },
+    {
+      "name": "q1_three_chars_all_bang",
+      "input": "!!!",
+      "output": "99\n"
+    },
+    {
+      "name": "q1_three_chars_digits_123",
+      "input": "123",
+      "output": "150\n"
+    },
+    {
+      "name": "q1_three_chars_0aZ",
+      "input": "0aZ",
+      "output": "235\n"
+    },
+    {
+      "name": "q1_three_chars_punct_-+!",
+      "input": "-+!",
+      "output": "121\n"
+    },
+    {
+      "name": "q1_three_chars_plus_plus_plus",
+      "input": "+++",
+      "output": "129\n"
+    },
+    {
+      "name": "q1_three_chars_minus_minus_minus",
+      "input": "---",
+      "output": "135\n"
+    },
+    {
+      "name": "q1_three_chars_mix_plus_minus_bang",
+      "input": "+-!",
+      "output": "121\n"
+    },
+    {
+      "name": "q1_four_chars_Ab!+",
+      "input": "Ab!+",
+      "output": "196\n174\n"
+    },
+    {
+      "name": "q1_four_chars_abcD",
+      "input": "abcD",
+      "output": "294\n265\n"
+    },
+    {
+      "name": "q1_five_chars_Ab!+C",
+      "input": "Ab!+C",
+      "output": "196\n174\n143\n"
+    },
+    {
+      "name": "q1_five_chars_abcde",
+      "input": "abcde",
+      "output": "294\n297\n300\n"
+    },
+    {
+      "name": "q1_six_chars_Ab!+C!",
+      "input": "Ab!+C!",
+      "output": "196\n174\n143\n143\n"
+    },
+    {
+      "name": "q1_six_chars_digits_123456",
+      "input": "123456",
+      "output": "150\n153\n156\n159\n"
+    },
+    {
+      "name": "q1_seven_chars_specials_mix",
+      "input": "!!+-+!-",
+      "output": "109\n121\n131\n121\n121\n"
+    },
+    {
+      "name": "q1_long_10_digits",
+      "input": "0101010101",
+      "output": "145\n146\n145\n146\n145\n146\n145\n146\n"
+    },
+    {
+      "name": "q1_long_10_alpha",
+      "input": "abcdefghij",
+      "output": "294\n297\n300\n303\n306\n309\n312\n315\n"
+    },
+    {
+      "name": "q1_mixed_letters_digits_punct",
+      "input": "aZ9-+!!b",
+      "output": "244\n192\n145\n121\n109\n164\n"
+    },
+    {
+      "name": "q1_many_bangs",
+      "input": "!!!!!!!!!!!!!!!!!!!!",
+      "output": "99\n99\n99\n99\n99\n99\n99\n99\n99\n99\n99\n99\n99\n99\n99\n99\n99\n99\n"
+    },
+    {
+      "name": "q1_many_pluses",
+      "input": "++++++++++++++++++++",
+      "output": "129\n129\n129\n129\n129\n129\n129\n129\n129\n129\n129\n129\n129\n129\n129\n129\n129\n129\n"
+    },
+    {
+      "name": "q1_many_minuses",
+      "input": "--------------------",
+      "output": "135\n135\n135\n135\n135\n135\n135\n135\n135\n135\n135\n135\n135\n135\n135\n135\n135\n135\n"
+    },
+    {
+      "name": "q1_alternating_plus_minus_30",
+      "input": "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-",
+      "output": "131\n133\n131\n133\n131\n133\n131\n133\n131\n133\n131\n133\n131\n133\n131\n133\n131\n133\n131\n133\n131\n133\n131\n133\n131\n133\n131\n133\n"
+    },
+    {
+      "name": "q1_alternating_bang_digit_30",
+      "input": "!9!9!9!9!9!9!9!9!9!9!9!9!9!9!9",
+      "output": "123\n147\n123\n147\n123\n147\n123\n147\n123\n147\n123\n147\n123\n147\n123\n147\n123\n147\n123\n147\n123\n147\n123\n147\n123\n147\n123\n147\n"
+    },
+    {
+      "name": "q1_illegal_first_at",
+      "input": "@",
+      "output": "Error!\n"
+    },
+    {
+      "name": "q1_illegal_second_caret",
+      "input": "A^",
+      "output": "Error!\n"
+    },
+    {
+      "name": "q1_illegal_comma",
+      "input": "A,",
+      "output": "Error!\n"
+    },
+    {
+      "name": "q1_illegal_dot",
+      "input": "A.",
+      "output": "Error!\n"
+    },
+    {
+      "name": "q1_illegal_space",
+      "input": "A b",
+      "output": "Error!\n"
+    },
+    {
+      "name": "q1_illegal_newline_in_stream",
+      "input": "A\nB",
+      "output": "Error!\n"
+    },
+    {
+      "name": "q1_illegal_after_3_should_print_then_error",
+      "input": "Ab!@",
+      "output": "196\nError!\n"
+    },
+    {
+      "name": "q1_illegal_late_like_pdf",
+      "input": "Ab!+C@",
+      "output": "196\n174\n143\nError!\n"
+    },
+    {
+      "name": "q1_50_chars_all_a",
+      "input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "output": "291\n291\n291\n291\n291\n291\n291\n291\n291\n291\n291\n291\n291\n291\n291\n291\n291\n291\n291\n291\n291\n291\n291\n291\n291\n291\n291\n291\n291\n291\n291\n291\n291\n291\n291\n291\n291\n291\n291\n291\n291\n291\n291\n291\n291\n291\n291\n291\n"
+    },
+    {
+      "name": "q1_50_chars_cycle_9plusbang",
+      "input": "9+!9+!9+!9+!9+!9+!9+!9+!9+!9+!9+!9+!9+!9+!9+!9+!9+",
+      "output": "133\n133\n133\n133\n133\n133\n133\n133\n133\n133\n133\n133\n133\n133\n133\n133\n133\n133\n133\n133\n133\n133\n133\n133\n133\n133\n133\n133\n133\n133\n133\n133\n133\n133\n133\n133\n133\n133\n133\n133\n133\n133\n133\n133\n133\n133\n133\n133\n"
+    }
+  ]
+}
