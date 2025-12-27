@@ -1,21 +1,8 @@
 #include <stdio.h>
 
+int midterm_q1(int num);
 
-int SumOfDigits(int num) {
-    int sum = 0;
-    while (num > 0) {
-        sum += num%10;
-        num /= 10;
-    }
-    return sum;
-}
-int midterm_q1(int num) {
-    while (num >= 10) {
-        num = SumOfDigits(num);
-    }
-    return num;
-}
-
+//do not change the main function
 int main(void)
 {
     int num = 0;
@@ -27,4 +14,20 @@ int main(void)
 
     printf("%d", student_output);
     return 0;
+}
+
+int SumOfDigits(int num) {
+    int sum = 0;
+    while (num > 0) {
+        sum += num%10;
+        num /= 10;
+    }
+    return sum;
+}
+
+int midterm_q1(int num) {
+    while (num >= 10) {
+        num = SumOfDigits(num);
+    }
+    return num;
 }
