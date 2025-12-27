@@ -1,5 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
+
+
+void midterm_quiz_q3(int array[], int n);
+
 //DO NOT CHANGE THIS FUNCTION
 void print_array(int array[], int n) {
     for (int i = 0; i < n; i++) {
@@ -10,21 +14,6 @@ void print_array(int array[], int n) {
     }
     printf("\n");
 }
-
-
-void midterm_quiz_q3(int array[], int n); // Replace this line with your function.
-
-
-
-
-
-
-
-
-
-
-
-
 
 // Do not change these functions
 void read_int(int *x) {
@@ -52,4 +41,9 @@ int main() {
 
     free(array);
     return 0;
+}
+
+void midterm_quiz_q3(int array[], int n) // Replace this with your function.
+{
+
 }
