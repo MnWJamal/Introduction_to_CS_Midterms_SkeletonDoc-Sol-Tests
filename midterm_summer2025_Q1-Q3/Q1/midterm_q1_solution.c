@@ -1,5 +1,14 @@
 #include <stdio.h>
 
+int midterm_quiz_q1(void);
+
+// Do not change the main function
+int main(void) {
+    int student_output = midterm_quiz_q1();
+    printf("%d", student_output);
+    return 0;
+}
+
 int midterm_quiz_q1(void)
 {
     int max1 = 0, max2 = 0, max3 = 0;
@@ -65,9 +74,3 @@ int midterm_quiz_q1(void)
     return sum;
 }
 
-// Do not change the main function
-int main(void) {
-    int student_output = midterm_quiz_q1();
-    printf("%d", student_output);
-    return 0;
-}
