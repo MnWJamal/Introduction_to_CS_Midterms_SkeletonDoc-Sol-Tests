@@ -3,8 +3,9 @@
 #define M 4
 #define N 3
 
-void midterm_quiz_q3(int pic[M][N]); // Replace this line with your function.
+void midterm_quiz_q3(int pic[M][N]);
 
+//DO NOT CHANGE THESE FUNCTIONS
 static void read_int(int *x) {
     scanf(" %d", x);
 }
@@ -33,4 +34,9 @@ int main(void) {
     midterm_quiz_q3(pic);
     print_pic(pic);
     return 0;
+}
+
+void midterm_quiz_q3(int pic[M][N]) // Replace this with your function.
+{
+    
 }
