@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-bool midterm_quiz_q1(int num); // Replace this line with your function.
+bool midterm_quiz_q1(int num);
 
 
 // Do not change the main function
@@ -15,4 +15,9 @@ int main() {
     printf("%d", student_output);
 
     return 0;
+}
+
+bool midterm_quiz_q1(int num) // Replace this with your function.
+{
+    return true;
 }
