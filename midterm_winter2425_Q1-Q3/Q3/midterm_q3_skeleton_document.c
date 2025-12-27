@@ -1,12 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void midterm_quiz_q3(char arr[], int n); //WRITE YOUR CODE HERE
+void midterm_quiz_q3(char arr[], int n);
 
-
-
-
-//DO NOT CHANGE ANYTHING BELOW
+//DO NOT CHANGE THESE FUNCTIONS
 static void readArr(char *arr, int n)
 {
     for (int i = 0; i < n; i++) {
@@ -54,4 +51,10 @@ int main(void)
     free(poss1);
     free(poss2);
     return 0;
+}
+
+
+void midterm_quiz_q3(char arr[], int n) //Replace this with your function
+{
+    
 }
