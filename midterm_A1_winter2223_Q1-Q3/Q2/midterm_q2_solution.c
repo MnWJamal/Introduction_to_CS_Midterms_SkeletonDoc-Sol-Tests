@@ -2,16 +2,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-bool midterm_quiz_q2(int arr[], int n) {
-    for (int i = 0 ; i < n ; i ++) {
-        int seen = 0;
-        for (int j = 0 ; j < n ; j++) {
-            if (arr[j] == arr[i]) seen++;
-        }
-        if (seen != arr[i]) return false;
-    }
-    return true;
-}
+bool midterm_quiz_q2(int arr[], int n);
 
 // Do not change this function
 void fillArray(int arr[], int n) {
@@ -45,3 +36,16 @@ int main() {
     free(arr);
     return 0;
 }
+
+
+bool midterm_quiz_q2(int arr[], int n) {
+    for (int i = 0 ; i < n ; i ++) {
+        int seen = 0;
+        for (int j = 0 ; j < n ; j++) {
+            if (arr[j] == arr[i]) seen++;
+        }
+        if (seen != arr[i]) return false;
+    }
+    return true;
+}
+
