@@ -1,13 +1,8 @@
 #include <stdio.h>
 
-int midterm_quiz_q1(int num){
-    int sumofdivisors = 0;
-    for (int i = 1 ; i <= num ; i++) {
-        if (num%i == 0) sumofdivisors += i;
-    }
-    return (sumofdivisors > 2*num);
-}
+int midterm_quiz_q1(int num);
 
+//DO NOT CHANGE THESE FUNCTIONS
 static int read_int(void) {
     int x = 0;
     scanf(" %d", &x);
@@ -24,3 +19,12 @@ int main(void) {
     print_int(ans);
     return 0;
 }
+
+int midterm_quiz_q1(int num){
+    int sumofdivisors = 0;
+    for (int i = 1 ; i <= num ; i++) {
+        if (num%i == 0) sumofdivisors += i;
+    }
+    return (sumofdivisors > 2*num);
+}
+
