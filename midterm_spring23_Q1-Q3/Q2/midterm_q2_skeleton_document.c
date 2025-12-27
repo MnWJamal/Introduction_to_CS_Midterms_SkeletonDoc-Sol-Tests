@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
+
+void midterm_quiz_q2(char array[], int n, int k);
+
 //DO NOT CHANGE THIS FUNCTION
 void print_k(int k, int amount) {
     printf("Amount of chars that appear %d times: %d\n", k, amount);
 }
-
-void midterm_quiz_q2(char array[], int n, int k); // Replace this line with your function.
 
 // Do not change these functions
 void read_int(int *x) {
@@ -35,4 +36,9 @@ int main() {
 
     free(array);
     return 0;
+}
+
+void midterm_quiz_q2(char array[], int n, int k) // Replace this with your function.
+{
+
 }
