@@ -2,20 +2,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-bool midterm_quiz_q2(char arr[], int n1, char key[], int n2) {
-    for (int i = 0 ; i < n2 ; i++) {
-        bool found = false;
-        for (int j = 0 ; j < n1 ; j++)
-        {
-            if (arr[j] == key[i]) {
-                found = true;
-                break;
-            }
-        }
-        if (!found) return false;
-    }
-    return true;
-}
+bool midterm_quiz_q2(char arr[], int n1, char key[], int n2);
 
 
 // Do not change these functions
@@ -42,4 +29,19 @@ int main() {
     free(arr);
     free(key);
     return 0;
+}
+
+bool midterm_quiz_q2(char arr[], int n1, char key[], int n2) {
+    for (int i = 0 ; i < n2 ; i++) {
+        bool found = false;
+        for (int j = 0 ; j < n1 ; j++)
+        {
+            if (arr[j] == key[i]) {
+                found = true;
+                break;
+            }
+        }
+        if (!found) return false;
+    }
+    return true;
 }
