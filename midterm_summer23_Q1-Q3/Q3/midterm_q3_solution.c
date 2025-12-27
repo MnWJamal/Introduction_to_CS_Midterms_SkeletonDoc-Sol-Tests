@@ -1,15 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-double midterm_q3(double arr[], int n, int idx) {
-    double part1 = (idx >= 2)? 0.1 * arr[idx-2] : 0;
-    double part2 = (idx >= 1)? 0.2 * arr[idx-1] : 0;
-    double part3 = 0.4 * arr[idx];
-    double part4 = (idx <= n-2)? 0.2 * arr[idx+1] : 0;
-    double part5 = (idx <= n-3)? 0.1 * arr[idx+2] : 0;
-    return (part1 + part2 + part3 + part4 + part5);
-}
+double midterm_q3(double arr[], int n, int idx);
 
+//DO NOT CHANGE THESE FUNCTIONS
 static void readArray(double *arr, int n)
 {
     for (int i = 0; i < n; i++) {
@@ -48,4 +42,13 @@ int main(void)
 
     free(arr);
     return 0;
+}
+
+double midterm_q3(double arr[], int n, int idx) {
+    double part1 = (idx >= 2)? 0.1 * arr[idx-2] : 0;
+    double part2 = (idx >= 1)? 0.2 * arr[idx-1] : 0;
+    double part3 = 0.4 * arr[idx];
+    double part4 = (idx <= n-2)? 0.2 * arr[idx+1] : 0;
+    double part5 = (idx <= n-3)? 0.1 * arr[idx+2] : 0;
+    return (part1 + part2 + part3 + part4 + part5);
 }
