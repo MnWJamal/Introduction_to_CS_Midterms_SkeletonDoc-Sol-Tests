@@ -1,17 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int midterm_quiz_q3(int arr[], int n) {
-    int maxsum = 0;
-    for (int i = 0 ; i < n ; i++) {
-        int stackingsum = 0;
-        for (int j = i ; j < n ; j++) {
-            stackingsum += arr[j];
-            if (stackingsum > maxsum) maxsum = stackingsum;
-        }
-    }
-    return maxsum;
-}
+int midterm_quiz_q3(int arr[], int n);
 
 // Do not change these functions
 int read_int(void) {
@@ -43,4 +33,17 @@ int main(void) {
 
     free(arr);
     return 0;
+}
+
+
+int midterm_quiz_q3(int arr[], int n) {
+    int maxsum = 0;
+    for (int i = 0 ; i < n ; i++) {
+        int stackingsum = 0;
+        for (int j = i ; j < n ; j++) {
+            stackingsum += arr[j];
+            if (stackingsum > maxsum) maxsum = stackingsum;
+        }
+    }
+    return maxsum;
 }
