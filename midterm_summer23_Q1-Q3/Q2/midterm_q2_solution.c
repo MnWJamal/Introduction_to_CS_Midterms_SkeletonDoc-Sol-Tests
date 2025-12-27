@@ -1,25 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-double midterm_q2(double arr[], int n)
-{
-    double min1 = arr[0], min2 = 0;
-    int min2init = 0;
-    for (int i = 1; i < n;i++) {
-        if (arr[i] < min1) {
-            min2 = min1;
-            min1 = arr[i];
-            min2init = 1;
-        }
-        else if ((arr[i] < min2 || !min2init) && arr[i] != min1) {
-            min2 = arr[i];
-            min2init = 1;
-        }
-    }
-    if (!min2init) return min1;
-    return min2;
-}
+double midterm_q2(double arr[], int n);
 
+//DO NOT CHANGE THESE FUNCTIONS
 static void readArray(double *arr, int n)
 {
     for (int i = 0; i < n; i++) {
@@ -56,4 +40,23 @@ int main(void)
 
     free(arr);
     return 0;
+}
+
+double midterm_q2(double arr[], int n)
+{
+    double min1 = arr[0], min2 = 0;
+    int min2init = 0;
+    for (int i = 1; i < n;i++) {
+        if (arr[i] < min1) {
+            min2 = min1;
+            min1 = arr[i];
+            min2init = 1;
+        }
+        else if ((arr[i] < min2 || !min2init) && arr[i] != min1) {
+            min2 = arr[i];
+            min2init = 1;
+        }
+    }
+    if (!min2init) return min1;
+    return min2;
 }
