@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int midterm_quiz_q2(char arr[], int n); // Replace this line with your function.
+int midterm_quiz_q2(char arr[], int n);
 
 // Do not change this function
 void fillArray(char arr[], int n) {
@@ -29,5 +29,10 @@ int main() {
     printf("%d", student_output);
 
     free(arr);
+    return 0;
+}
+
+int midterm_quiz_q2(char arr[], int n) // Replace this line with your function.
+{
     return 0;
 }
