@@ -1,0 +1,279 @@
+{
+  "tests": [
+    {
+      "name": "edge_n0_empty",
+      "input": "0\n",
+      "output": "0"
+    },
+    {
+      "name": "edge_n1_a",
+      "input": "1\na\n",
+      "output": "1"
+    },
+    {
+      "name": "edge_n1_z",
+      "input": "1\nz\n",
+      "output": "1"
+    },
+    {
+      "name": "edge_n2_same",
+      "input": "2\nm m\n",
+      "output": "1"
+    },
+    {
+      "name": "edge_n2_diff",
+      "input": "2\na b\n",
+      "output": "2"
+    },
+    {
+      "name": "edge_n3_a_b_a",
+      "input": "3\na b a\n",
+      "output": "2"
+    },
+    {
+      "name": "edge_n3_all_same",
+      "input": "3\nc c c\n",
+      "output": "1"
+    },
+    {
+      "name": "edge_n4_two_letters_alt",
+      "input": "4\na b a b\n",
+      "output": "2"
+    },
+    {
+      "name": "edge_n5_palindrome",
+      "input": "5\na b c b a\n",
+      "output": "3"
+    },
+    {
+      "name": "edge_n6_full_repeat",
+      "input": "6\na a a a a a\n",
+      "output": "1"
+    },
+    {
+      "name": "max_distinct_26_all_letters",
+      "input": "26\nabcdefghijklmnopqrstuvwxyz\n",
+      "output": "26"
+    },
+    {
+      "name": "max_distinct_26_all_letters_spaced",
+      "input": "26\na b c d e f g h i j k l m n o p q r s t u v w x y z\n",
+      "output": "26"
+    },
+    {
+      "name": "repeat_2x26_52chars",
+      "input": "52\nabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz\n",
+      "output": "26"
+    },
+    {
+      "name": "repeat_scrambled_with_dupes",
+      "input": "52\nqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnm\n",
+      "output": "26"
+    },
+    {
+      "name": "whitespace_tabs_newlines",
+      "input": "8\na\tb\na   c\ta\nb   a\td\n",
+      "output": "4"
+    },
+    {
+      "name": "only_first_and_last_letters",
+      "input": "100\naaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaazzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz\n",
+      "output": "2"
+    },
+    {
+      "name": "one_of_each_then_many_a",
+      "input": "126\nabcdefghijklmnopqrstuvwxyzaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n",
+      "output": "26"
+    },
+    {
+      "name": "random_1_n7",
+      "input": "7\nhmpcgdp\n",
+      "output": "6"
+    },
+    {
+      "name": "random_2_n8",
+      "input": "8\ndmnqlilz\n",
+      "output": "7"
+    },
+    {
+      "name": "random_3_n9",
+      "input": "9\nnqtjggnac\n",
+      "output": "7"
+    },
+    {
+      "name": "random_4_n10",
+      "input": "10\nabknmawhcn\n",
+      "output": "8"
+    },
+    {
+      "name": "random_5_n15",
+      "input": "15\nhkjbckupfqbsqds\n",
+      "output": "11"
+    },
+    {
+      "name": "random_6_n20",
+      "input": "20\nkpwneorpthdvmhvablnn\n",
+      "output": "15"
+    },
+    {
+      "name": "random_7_n25",
+      "input": "25\nwljzhvqjngxhejxogvtdhkxts\n",
+      "output": "16"
+    },
+    {
+      "name": "random_8_n30",
+      "input": "30\nzdublesvcvylhisgoueophayekglyy\n",
+      "output": "17"
+    },
+    {
+      "name": "random_9_n40",
+      "input": "40\ndamxwodtfeabbaavnccvhmonskmyxrjzgwwddkng\n",
+      "output": "21"
+    },
+    {
+      "name": "random_10_n60",
+      "input": "60\nclohhljifkkfgbpcelvheqtatumwtiuyzpvbvrqhpmsunhedhytiwkzeiaug\n",
+      "output": "25"
+    },
+    {
+      "name": "random_11_n100",
+      "input": "100\nlxksxlxyfriwavgpqqegcawbrylhmhicknwyujnfzznhqxjdijiflsilycjpxfybssmgqevpvjumcqddbiulqwxssvwqcalpnqzm\n",
+      "output": "24"
+    },
+    {
+      "name": "random_12_n150",
+      "input": "150\nyjolwupiktgpzhhexqcizihifdldgriglvmjojtjrtomcpxedldrmpvhxxfgyulnzryddcsosaqaitfnmyqiltpcsvixwrbzdsycquufqdqeuhsnvkgplpidwxgsyqetxmkkoinxkaypdjnkthecqg\n",
+      "output": "26"
+    },
+    {
+      "name": "systematic_k1_3x",
+      "input": "3\naaa\n",
+      "output": "1"
+    },
+    {
+      "name": "systematic_k2_3x",
+      "input": "6\nababab\n",
+      "output": "2"
+    },
+    {
+      "name": "systematic_k3_3x",
+      "input": "9\nabcabcabc\n",
+      "output": "3"
+    },
+    {
+      "name": "systematic_k4_3x",
+      "input": "12\nabcdabcdabcd\n",
+      "output": "4"
+    },
+    {
+      "name": "systematic_k5_3x",
+      "input": "15\nabcdeabcdeabcde\n",
+      "output": "5"
+    },
+    {
+      "name": "systematic_k6_3x",
+      "input": "18\nabcdefabcdefabcdef\n",
+      "output": "6"
+    },
+    {
+      "name": "systematic_k7_3x",
+      "input": "21\nabcdefgabcdefgabcdefg\n",
+      "output": "7"
+    },
+    {
+      "name": "systematic_k8_3x",
+      "input": "24\nabcdefghabcdefghabcdefgh\n",
+      "output": "8"
+    },
+    {
+      "name": "systematic_k9_3x",
+      "input": "27\nabcdefghiabcdefghiabcdefghi\n",
+      "output": "9"
+    },
+    {
+      "name": "systematic_k10_3x",
+      "input": "30\nabcdefghijabcdefghijabcdefghij\n",
+      "output": "10"
+    },
+    {
+      "name": "systematic_k11_3x",
+      "input": "33\nabcdefghijkabcdefghijkabcdefghijk\n",
+      "output": "11"
+    },
+    {
+      "name": "systematic_k12_3x",
+      "input": "36\nabcdefghijklabcdefghijklabcdefghijkl\n",
+      "output": "12"
+    },
+    {
+      "name": "systematic_k13_3x",
+      "input": "39\nabcdefghijklmabcdefghijklmabcdefghijklm\n",
+      "output": "13"
+    },
+    {
+      "name": "systematic_k14_3x",
+      "input": "42\nabcdefghijklmnabcdefghijklmnabcdefghijklmn\n",
+      "output": "14"
+    },
+    {
+      "name": "systematic_k15_3x",
+      "input": "45\nabcdefghijklmnoabcdefghijklmnoabcdefghijklmno\n",
+      "output": "15"
+    },
+    {
+      "name": "systematic_k16_3x",
+      "input": "48\nabcdefghijklmnopabcdefghijklmnopabcdefghijklmnop\n",
+      "output": "16"
+    },
+    {
+      "name": "systematic_k17_3x",
+      "input": "51\nabcdefghijklmnopqabcdefghijklmnopqabcdefghijklmnopq\n",
+      "output": "17"
+    },
+    {
+      "name": "systematic_k18_3x",
+      "input": "54\nabcdefghijklmnopqrabcdefghijklmnopqrabcdefghijklmnopqr\n",
+      "output": "18"
+    },
+    {
+      "name": "systematic_k19_3x",
+      "input": "57\nabcdefghijklmnopqrsabcdefghijklmnopqrsabcdefghijklmnopqrs\n",
+      "output": "19"
+    },
+    {
+      "name": "systematic_k20_3x",
+      "input": "60\nabcdefghijklmnopqrstabcdefghijklmnopqrstabcdefghijklmnopqrst\n",
+      "output": "20"
+    },
+    {
+      "name": "systematic_k21_3x",
+      "input": "63\nabcdefghijklmnopqrstuabcdefghijklmnopqrstuabcdefghijklmnopqrstu\n",
+      "output": "21"
+    },
+    {
+      "name": "systematic_k22_3x",
+      "input": "66\nabcdefghijklmnopqrstuvabcdefghijklmnopqrstuvabcdefghijklmnopqrstuv\n",
+      "output": "22"
+    },
+    {
+      "name": "systematic_k23_3x",
+      "input": "69\nabcdefghijklmnopqrstuvwabcdefghijklmnopqrstuvwabcdefghijklmnopqrstuvw\n",
+      "output": "23"
+    },
+    {
+      "name": "systematic_k24_3x",
+      "input": "72\nabcdefghijklmnopqrstuvwxabcdefghijklmnopqrstuvwxabcdefghijklmnopqrstuvwx\n",
+      "output": "24"
+    },
+    {
+      "name": "systematic_k25_3x",
+      "input": "75\nabcdefghijklmnopqrstuvwxyabcdefghijklmnopqrstuvwxyabcdefghijklmnopqrstuvwxy\n",
+      "output": "25"
+    },
+    {
+      "name": "systematic_k26_3x",
+      "input": "78\nabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz\n",
+      "output": "26"
+    }
+  ]
+}

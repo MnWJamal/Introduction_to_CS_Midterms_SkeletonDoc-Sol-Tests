@@ -1,0 +1,209 @@
+{
+  "tests": [
+    {
+      "name": "edge_n0_empty",
+      "input": "0\n",
+      "output": "0"
+    },
+    {
+      "name": "edge_n1_1_not_perfect",
+      "input": "1\n1\n",
+      "output": "0"
+    },
+    {
+      "name": "edge_n1_6_perfect",
+      "input": "1\n6\n",
+      "output": "1"
+    },
+    {
+      "name": "edge_n1_28_perfect",
+      "input": "1\n28\n",
+      "output": "1"
+    },
+    {
+      "name": "edge_n1_prime_97",
+      "input": "1\n97\n",
+      "output": "0"
+    },
+    {
+      "name": "edge_n2_one_perfect",
+      "input": "2\n6 7\n",
+      "output": "1"
+    },
+    {
+      "name": "edge_n2_two_perfect",
+      "input": "2\n6 28\n",
+      "output": "2"
+    },
+    {
+      "name": "edge_n2_none",
+      "input": "2\n10 12\n",
+      "output": "0"
+    },
+    {
+      "name": "sample_like_mixed_with_dupes",
+      "input": "5\n1 28 17 6 28\n",
+      "output": "3"
+    },
+    {
+      "name": "sample_none",
+      "input": "3\n10 100 1\n",
+      "output": "0"
+    },
+    {
+      "name": "perfect_6_alone",
+      "input": "1\n6\n",
+      "output": "1"
+    },
+    {
+      "name": "perfect_6_neighbors",
+      "input": "3\n5 6 7\n",
+      "output": "1"
+    },
+    {
+      "name": "perfect_6_dupe3",
+      "input": "3\n6 6 6\n",
+      "output": "3"
+    },
+    {
+      "name": "perfect_28_alone",
+      "input": "1\n28\n",
+      "output": "1"
+    },
+    {
+      "name": "perfect_28_neighbors",
+      "input": "3\n27 28 29\n",
+      "output": "1"
+    },
+    {
+      "name": "perfect_28_dupe3",
+      "input": "3\n28 28 28\n",
+      "output": "3"
+    },
+    {
+      "name": "perfect_496_alone",
+      "input": "1\n496\n",
+      "output": "1"
+    },
+    {
+      "name": "perfect_496_neighbors",
+      "input": "3\n495 496 497\n",
+      "output": "1"
+    },
+    {
+      "name": "perfect_496_dupe3",
+      "input": "3\n496 496 496\n",
+      "output": "3"
+    },
+    {
+      "name": "perfect_8128_alone",
+      "input": "1\n8128\n",
+      "output": "1"
+    },
+    {
+      "name": "perfect_8128_neighbors",
+      "input": "3\n8127 8128 8129\n",
+      "output": "1"
+    },
+    {
+      "name": "perfect_8128_dupe3",
+      "input": "3\n8128 8128 8128\n",
+      "output": "3"
+    },
+    {
+      "name": "perfect_33550336_alone",
+      "input": "1\n33550336\n",
+      "output": "1"
+    },
+    {
+      "name": "perfect_33550336_neighbors",
+      "input": "3\n33550335 33550336 33550337\n",
+      "output": "1"
+    },
+    {
+      "name": "perfect_33550336_dupe3",
+      "input": "3\n33550336 33550336 33550336\n",
+      "output": "3"
+    },
+    {
+      "name": "nonperfect_squares",
+      "input": "9\n4 9 16 25 36 49 64 81 100\n",
+      "output": "0"
+    },
+    {
+      "name": "nonperfect_abundant_small",
+      "input": "10\n12 18 20 24 30 36 40 48 54 60\n",
+      "output": "0"
+    },
+    {
+      "name": "nonperfect_deficient_small",
+      "input": "11\n2 3 5 7 8 10 11 13\n14 15 16\n",
+      "output": "0"
+    },
+    {
+      "name": "mix_many_small",
+      "input": "20\n1 2 3 4 5 6 7 8\n9 10 11 12 13 14 15 16\n17 18 19 20\n",
+      "output": "1"
+    },
+    {
+      "name": "mix_small_with_perfects",
+      "input": "9\n6 28 12 496 97 8128 1000 33550336 33550335\n",
+      "output": "5"
+    },
+    {
+      "name": "mix_duplicates_heavy",
+      "input": "31\n28 28 28 28 28 28 28 28\n28 28 6 6 6 6 6 6\n6 1 1 1 1 1 496 496\n496 8128 8128 33550336 12 15 21\n",
+      "output": "23"
+    },
+    {
+      "name": "structured_k1",
+      "input": "4\n1 1 1 6\n",
+      "output": "1"
+    },
+    {
+      "name": "structured_k2",
+      "input": "9\n1 1 1 1 1 1 6 6 28\n",
+      "output": "3"
+    },
+    {
+      "name": "structured_k3",
+      "input": "14\n1 1 1 1 1 1 1 1\n1 6 6 6 28 496\n",
+      "output": "5"
+    },
+    {
+      "name": "structured_k4",
+      "input": "19\n1 1 1 1 1 1 1 1\n1 1 1 1 6 6 6 6\n28 28 496\n",
+      "output": "7"
+    },
+    {
+      "name": "structured_k5",
+      "input": "23\n1 1 1 1 1 1 1 1\n1 1 1 1 1 1 1 6\n6 6 6 6 28 28 496\n",
+      "output": "8"
+    },
+    {
+      "name": "structured_k6",
+      "input": "29\n1 1 1 1 1 1 1 1\n1 1 1 1 1 1 1 1\n1 1 6 6 6 6 6 6\n28 28 28 496 496\n",
+      "output": "11"
+    },
+    {
+      "name": "structured_k7",
+      "input": "33\n1 1 1 1 1 1 1 1\n1 1 1 1 1 1 1 1\n1 1 1 1 1 6 6 6\n6 6 6 6 28 28 28 496\n496\n",
+      "output": "12"
+    },
+    {
+      "name": "structured_k8",
+      "input": "38\n1 1 1 1 1 1 1 1\n1 1 1 1 1 1 1 1\n1 1 1 1 1 1 1 1\n6 6 6 6 6 6 6 6\n28 28 28 28 496 496\n",
+      "output": "14"
+    },
+    {
+      "name": "structured_k9",
+      "input": "43\n1 1 1 1 1 1 1 1\n1 1 1 1 1 1 1 1\n1 1 1 1 1 1 1 1\n1 1 1 6 6 6 6 6\n6 6 6 6 28 28 28 28\n496 496 496\n",
+      "output": "16"
+    },
+    {
+      "name": "structured_k10",
+      "input": "48\n1 1 1 1 1 1 1 1\n1 1 1 1 1 1 1 1\n1 1 1 1 1 1 1 1\n1 1 1 1 1 1 6 6\n6 6 6 6 6 6 6 6\n28 28 28 28 28 496 496 496\n",
+      "output": "18"
+    }
+  ]
+}
