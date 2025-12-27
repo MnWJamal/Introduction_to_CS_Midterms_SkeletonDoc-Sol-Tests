@@ -1,22 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
+
+void midterm_quiz_q1(int array[], int n);
+
 //DO NOT CHANGE THIS FUNCTION
 void print_amount(int number, int amount) {
     printf("Numbers smaller than %d: %d\n", number, amount);
 }
-
-void midterm_quiz_q1(int array[], int n) {
-    for (int i = 0; i < n; i++) {
-        int ct = 0;
-        for (int j = 0 ; j < n; j++) {
-            if (array[j] > 0 && array[j] < array[i]) {
-                ct++;
-            }
-        }
-        print_amount(array[i],ct);
-    }
-}
-
 // Do not change these functions
 void read_int(int *x) {
     scanf(" %d", x);
@@ -43,4 +33,17 @@ int main() {
 
     free(array);
     return 0;
+}
+
+
+void midterm_quiz_q1(int array[], int n) {
+    for (int i = 0; i < n; i++) {
+        int ct = 0;
+        for (int j = 0 ; j < n; j++) {
+            if (array[j] > 0 && array[j] < array[i]) {
+                ct++;
+            }
+        }
+        print_amount(array[i],ct);
+    }
 }
