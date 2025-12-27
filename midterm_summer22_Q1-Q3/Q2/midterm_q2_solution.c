@@ -1,22 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int midterm_quiz_q2(int arr[], int n){
-    if (n <= 0) return 0;
-    int sum = 0;
-    for (int i = 0 ; i < n ; i++) {
-        sum += arr[i];
-    }
-    double average = (double)(sum) / n;
-    int ct = 0;
-    for (int i = 0 ; i < n ; i++) {
-        if (((double)arr[i]) > average) {
-            ct++;
-        }
-    }
-    return ct;
-}
+int midterm_quiz_q2(int arr[], int n);
 
+//DO NOT CHANGE THESE FUNCTIONS
 static int read_int(void) {
     int x = 0;
     scanf(" %d", &x);
@@ -49,4 +36,20 @@ int main(void) {
 
     free(arr);
     return 0;
+}
+
+int midterm_quiz_q2(int arr[], int n){
+    if (n <= 0) return 0;
+    int sum = 0;
+    for (int i = 0 ; i < n ; i++) {
+        sum += arr[i];
+    }
+    double average = (double)(sum) / n;
+    int ct = 0;
+    for (int i = 0 ; i < n ; i++) {
+        if (((double)arr[i]) > average) {
+            ct++;
+        }
+    }
+    return ct;
 }
