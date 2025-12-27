@@ -3,6 +3,7 @@
 
 double midterm_q3(double arr[], int n, int idx);
 
+//DO NOT CHANGE THESE FUNCTIONS
 static void readArray(double *arr, int n)
 {
     for (int i = 0; i < n; i++) {
@@ -41,4 +42,9 @@ int main(void)
 
     free(arr);
     return 0;
+}
+
+double midterm_q3(double arr[], int n, int idx) //Replace with your function.
+{
+    return 0.0;
 }
