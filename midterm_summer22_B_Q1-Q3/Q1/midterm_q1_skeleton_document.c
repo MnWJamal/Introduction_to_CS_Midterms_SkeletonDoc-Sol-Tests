@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int midterm_quiz_q1(int num); // Replace this line with your function.
+int midterm_quiz_q1(int num);
 
 static int read_int(void) {
     int x = 0;
@@ -17,5 +17,11 @@ int main(void) {
     int num = read_int();
     int student_output = midterm_quiz_q1(num);
     print_int(student_output);
+    return 0;
+}
+
+
+int midterm_quiz_q1(int num) // Replace this with your function.
+{
     return 0;
 }
