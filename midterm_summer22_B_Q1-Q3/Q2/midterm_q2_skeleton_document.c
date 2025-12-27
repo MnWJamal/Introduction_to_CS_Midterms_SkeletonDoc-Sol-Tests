@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void midterm_quiz_q2(char arr[], int n); // Replace this line with your function.
+void midterm_quiz_q2(char arr[], int n);
 
+//DO NOT CHANGE THESE FUNCTIONS
 static int read_int(void) {
     int x = 0;
     scanf(" %d", &x);
@@ -40,4 +41,9 @@ int main(void) {
 
     free(arr);
     return 0;
+}
+
+void midterm_quiz_q2(char arr[], int n) // Replace this with your function.
+{
+    
 }
