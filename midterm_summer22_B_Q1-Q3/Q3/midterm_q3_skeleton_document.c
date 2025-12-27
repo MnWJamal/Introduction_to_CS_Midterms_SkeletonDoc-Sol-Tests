@@ -3,8 +3,9 @@
 #define M 4
 #define N 3
 
-int midterm_quiz_q3(int grades[M][N]); // Replace this line with your function.
+int midterm_quiz_q3(int grades[M][N]); 
 
+//DO NOT CHANGE THESE FUNCTIONS
 static void read_int(int *x) {
     scanf(" %d", x);
 }
@@ -27,5 +28,11 @@ int main(void) {
     fill_grades(grades);
     int ans = midterm_quiz_q3(grades);
     print_int(ans);
+    return 0;
+}
+
+
+int midterm_quiz_q3(int grades[M][N]) // Replace this with your function.
+{
     return 0;
 }
