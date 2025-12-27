@@ -1,13 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-double midterm_quiz_q3(int arr[], int n, int idx)
-{
-    double left = 0.0, right = 0.0;
-    if (idx >= 1) left = arr[idx-1];
-    if (idx <= n-2) right = arr[idx+1];
-    return (0.5*(right - left));
-}
+double midterm_quiz_q3(int arr[], int n, int idx);
 
 // Do not change this function
 void fillArray(int arr[], int n) {
@@ -41,4 +35,13 @@ int main() {
 
     free(arr);
     return 0;
+}
+
+
+double midterm_quiz_q3(int arr[], int n, int idx)
+{
+    double left = 0.0, right = 0.0;
+    if (idx >= 1) left = arr[idx-1];
+    if (idx <= n-2) right = arr[idx+1];
+    return (0.5*(right - left));
 }
