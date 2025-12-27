@@ -1,14 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int midterm_quiz_q3(int arr[], int n, int k)
-{
-    int ct = 0;
-    for (int i = 0 ; i < n-1 ; i++) {
-        ct += (arr[i]+arr[i+1] == k);
-    }
-    return ct;
-}
+int midterm_quiz_q3(int arr[], int n, int k);
 
 // Do not change this function
 void fillArray(int arr[], int n) {
@@ -39,4 +32,13 @@ int main() {
 
     free(arr);
     return 0;
+}
+
+int midterm_quiz_q3(int arr[], int n, int k)
+{
+    int ct = 0;
+    for (int i = 0 ; i < n-1 ; i++) {
+        ct += (arr[i]+arr[i+1] == k);
+    }
+    return ct;
 }
