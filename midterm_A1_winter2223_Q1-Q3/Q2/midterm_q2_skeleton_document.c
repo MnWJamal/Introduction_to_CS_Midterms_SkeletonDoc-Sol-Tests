@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-bool midterm_quiz_q2(int arr[], int n);// Replace this line with your function.
+bool midterm_quiz_q2(int arr[], int n);
 
 // Do not change this function
 void fillArray(int arr[], int n) {
@@ -35,4 +35,11 @@ int main() {
 
     free(arr);
     return 0;
+}
+
+
+bool midterm_quiz_q2(int arr[], int n) //WRITE YOUR CODE HERE
+{
+    //YOU CAN CHANGE THE NEXT LINE
+    return true;
 }
