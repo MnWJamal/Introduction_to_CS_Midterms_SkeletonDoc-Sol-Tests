@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int midterm_quiz_q1(double num); //REPLACE WITH YOUR CODE
+int midterm_quiz_q1(double num);
 
 // Do not change the main function
 int main() {
@@ -15,5 +15,11 @@ int main() {
 
     // Print exactly what the function returned (no extra newline)
     printf("%d", student_output);
+    return 0;
+}
+
+int midterm_quiz_q1(double num) 
+{
+    //YOU CAN REPLACE THE NEXT LINE
     return 0;
 }
