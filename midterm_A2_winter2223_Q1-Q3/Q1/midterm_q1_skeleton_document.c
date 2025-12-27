@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int midterm_quiz_q1(int d1, int m1, int y1, int d2, int m2, int y2); // Replace this line with your function.
+int midterm_quiz_q1(int d1, int m1, int y1, int d2, int m2, int y2);
 
 // Do not change the main function
 int main() {
@@ -14,5 +14,11 @@ int main() {
 
     // Print exactly what the function returned (no extra newline)
     printf("%d", student_output);
+    return 0;
+}
+
+
+int midterm_quiz_q1(int d1, int m1, int y1, int d2, int m2, int y2) // Replace this line with your function.
+{
     return 0;
 }
