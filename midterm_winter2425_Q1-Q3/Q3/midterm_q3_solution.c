@@ -1,24 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void midterm_quiz_q3(char arr[], int n)
-{
-    int mid = (n-1)/2;
-    if (arr[mid] != '.') {
-        arr[mid] = '.';
-        return;
-    }
-    for (int i = 0 ; i < mid ; i++) {
-        if (arr[i] != arr[n-1-i]) {
-            if (arr[i] >= '0' && arr[i] <= '9') {
-                arr[n-1-i] = arr[i];
-            }
-            else arr[i] = arr[n-1-i];
-            return;
-        }
-    }
-}
+void midterm_quiz_q3(char arr[], int n);
 
+//DO NOT CHANGE THESE FUNCTIONS
 static void readArr(char *arr, int n)
 {
     for (int i = 0; i < n; i++) {
@@ -66,4 +51,23 @@ int main(void)
     free(poss1);
     free(poss2);
     return 0;
+}
+
+
+void midterm_quiz_q3(char arr[], int n)
+{
+    int mid = (n-1)/2;
+    if (arr[mid] != '.') {
+        arr[mid] = '.';
+        return;
+    }
+    for (int i = 0 ; i < mid ; i++) {
+        if (arr[i] != arr[n-1-i]) {
+            if (arr[i] >= '0' && arr[i] <= '9') {
+                arr[n-1-i] = arr[i];
+            }
+            else arr[i] = arr[n-1-i];
+            return;
+        }
+    }
 }
