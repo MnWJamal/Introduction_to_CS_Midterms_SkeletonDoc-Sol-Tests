@@ -3,6 +3,7 @@
 
 double midterm_q2(double arr[], int n);
 
+//DO NOT CHANGE THESE FUNCTIONS
 static void readArray(double *arr, int n)
 {
     for (int i = 0; i < n; i++) {
