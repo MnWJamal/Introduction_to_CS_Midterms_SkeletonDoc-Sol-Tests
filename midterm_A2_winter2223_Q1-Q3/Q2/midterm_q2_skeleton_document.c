@@ -32,7 +32,7 @@ int main() {
     return 0;
 }
 
-int midterm_quiz_q2(char arr[], int n) // Replace this line with your function.
+int midterm_quiz_q2(char arr[], int n) // Replace this with your function.
 {
     return 0;
 }
