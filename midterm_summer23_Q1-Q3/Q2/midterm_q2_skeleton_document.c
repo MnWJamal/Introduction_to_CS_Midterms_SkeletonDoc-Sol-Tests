@@ -40,3 +40,8 @@ int main(void)
     free(arr);
     return 0;
 }
+
+double midterm_q2(double arr[], int n) //Replace with your function
+{
+    return 0.0;
+}
