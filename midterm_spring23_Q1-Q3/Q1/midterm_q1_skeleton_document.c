@@ -1,24 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
+
+void midterm_quiz_q1(int array[], int n);
+
 //DO NOT CHANGE THIS FUNCTION
 void print_amount(int number, int amount) {
     printf("Numbers smaller than %d: %d\n", number, amount);
 }
-
-
-
-void midterm_quiz_q1(int array[], int n); // Replace this line with your function.
-
-
-
-
-
-
-
-
-
-
-
 
 // Do not change these functions
 void read_int(int *x) {
@@ -46,4 +34,9 @@ int main() {
 
     free(array);
     return 0;
+}
+
+void midterm_quiz_q1(int array[], int n) //REPLACE THIS WITH YOUR CODE
+{
+    
 }
