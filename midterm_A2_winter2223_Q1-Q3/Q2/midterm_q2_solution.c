@@ -1,22 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int midterm_quiz_q2(char arr[], int n)
-{
-    int msodarct = 0;
-    for (int i = 0 ; i < n ; i++)
-    {
-        int afterct = 0, beforect = 0;
-        for (int j = 0 ; j < i ; j++) {
-            if (arr[j] < arr[i]) beforect++;
-        }
-        for (int j = i+1 ; j < n ; j++) {
-            if (arr[j] > arr[i]) afterct++;
-        }
-        msodarct += (afterct == beforect);
-    }
-    return msodarct;
-}
+int midterm_quiz_q2(char arr[], int n);
 
 // Do not change this function
 void fillArray(char arr[], int n) {
@@ -45,4 +30,22 @@ int main() {
 
     free(arr);
     return 0;
+}
+
+
+int midterm_quiz_q2(char arr[], int n)
+{
+    int msodarct = 0;
+    for (int i = 0 ; i < n ; i++)
+    {
+        int afterct = 0, beforect = 0;
+        for (int j = 0 ; j < i ; j++) {
+            if (arr[j] < arr[i]) beforect++;
+        }
+        for (int j = i+1 ; j < n ; j++) {
+            if (arr[j] > arr[i]) afterct++;
+        }
+        msodarct += (afterct == beforect);
+    }
+    return msodarct;
 }
