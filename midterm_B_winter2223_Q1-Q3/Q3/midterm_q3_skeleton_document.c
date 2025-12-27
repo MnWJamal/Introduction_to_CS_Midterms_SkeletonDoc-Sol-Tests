@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int midterm_quiz_q3(int arr[], int n); // Replace this line with your function.
+int midterm_quiz_q3(int arr[], int n);
 
 
 // Do not change these functions
@@ -30,5 +30,10 @@ int main() {
     printf("%d", student_output);
     free(arr);
 
+    return 0;
+}
+
+int midterm_quiz_q3(int arr[], int n) // Replace this with your function.
+{
     return 0;
 }
