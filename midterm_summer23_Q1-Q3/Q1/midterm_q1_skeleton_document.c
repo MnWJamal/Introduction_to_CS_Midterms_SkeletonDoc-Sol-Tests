@@ -1,12 +1,8 @@
 #include <stdio.h>
 
-/*
-  Question 1 – Final digit sum
-  Implement:
-    int midterm_q1(int num);
-*/
 int midterm_q1(int num);
 
+//do not change the main function
 int main(void)
 {
     int num = 0;
@@ -18,4 +14,9 @@ int main(void)
 
     printf("%d", student_output);
     return 0;
+}
+
+int midterm_q1(int num) //Replace this with your function
+{
+  return 0;
 }
