@@ -1,19 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void midterm_quiz_q2(char arr[], int n){
-    int charHist['z' - 'a' + 1] = {0};
-    for (int i = 0 ; i < n ; i++) {
-        charHist[arr[i] - 'a']++;
-    }
-    int p = 0;
-    for (int i = 0 ; i < 'z' - 'a' + 1 ; i++) {
-        for (int j = 0 ; j < charHist[i] ; j++) {
-            arr[p] = i + 'a';
-            p++;
-        }
-    }
-}
+void midterm_quiz_q2(char arr[], int n);
 
 // Do not change these functions
 int read_int(void) {
@@ -53,4 +41,18 @@ int main(void) {
 
     free(arr);
     return 0;
+}
+
+void midterm_quiz_q2(char arr[], int n){
+    int charHist['z' - 'a' + 1] = {0};
+    for (int i = 0 ; i < n ; i++) {
+        charHist[arr[i] - 'a']++;
+    }
+    int p = 0;
+    for (int i = 0 ; i < 'z' - 'a' + 1 ; i++) {
+        for (int j = 0 ; j < charHist[i] ; j++) {
+            arr[p] = i + 'a';
+            p++;
+        }
+    }
 }
