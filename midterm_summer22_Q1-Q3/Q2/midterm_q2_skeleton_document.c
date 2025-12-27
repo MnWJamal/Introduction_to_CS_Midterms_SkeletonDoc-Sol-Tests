@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int midterm_quiz_q2(int arr[], int n); // Replace this line with your function.
+int midterm_quiz_q2(int arr[], int n);
 
+//DO NOT CHANGE THESE FUNCTIONS
 static int read_int(void) {
     int x = 0;
     scanf(" %d", &x);
@@ -34,5 +35,10 @@ int main(void) {
     print_int(ans);
 
     free(arr);
+    return 0;
+}
+
+int midterm_quiz_q2(int arr[], int n) // Replace this with your function.
+{
     return 0;
 }
